@@ -1,0 +1,115 @@
+body{
+
+    background-image: url(./Recursos/USUARIO.jpg);
+    background-size: cover;
+    margin-left: 220px;
+    margin-top: 40px;
+    margin-right: 220px;
+}
+
+.header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+
+        color: white;
+        font-family: Satoshi;
+
+    }
+
+    h2{
+
+        color: white;
+
+    }
+}
+
+.logo{
+
+    width: 100px;
+    height: 100px;
+    filter:  invert(20%) brightness(1000%);
+
+}
+
+.logoperfil1{
+
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 7px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logoperfil{
+
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+
+}
+
+.cosasperfil{
+
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+.informacion{
+
+    color: white;
+    margin-left: 50px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.infomas{
+
+    margin-left: 80px;
+    margin: 0px;
+    
+}
+
+
+.infomas .inicio{
+
+    font-size: 17px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+
+    width: 343px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea p{
+
+    border-bottom: 1px solid white;
+    margin-top: -10px;
+
+}
+
+.informacion ul li{
+
+    list-style: none;
+    margin-top: 40px;
+
+}
+
+.linea .iconoslista{
+
+    display: flex;  
+    justify-content: flex-end; 
+    margin-bottom: 14px;
+    
+}
