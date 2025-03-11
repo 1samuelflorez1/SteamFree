@@ -15,7 +15,9 @@ body{
     h1{
 
         color: white;
-        font-family: Satoshi;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
 
     }
 
@@ -64,7 +66,7 @@ body{
 .informacion{
 
     color: white;
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 32px;
     display: flex;
     align-items: center;
@@ -72,11 +74,17 @@ body{
 
 }
 
-.infomas{
+.inicio1{
 
-    margin-left: 80px;
+    margin-right: 10px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.infomas{
     margin: 0px;
-    
+    margin-left:25px;
 }
 
 
@@ -85,15 +93,15 @@ body{
     font-size: 17px;
     padding-top: 20px;
     margin-bottom: 10px;
-
-    width: 343px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 300;
 }
 
 .linea p{
-
     border-bottom: 1px solid white;
     margin-top: -10px;
 
@@ -111,5 +119,174 @@ body{
     display: flex;  
     justify-content: flex-end; 
     margin-bottom: 14px;
+    font-size: 20px;
     
+}
+
+.ordenicono{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    
+}
+
+.infomas .icono1{
+
+    font-size: 17px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.ordenicono1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -30px;
+    
+}
+
+.botones{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    a{
+
+      text-decoration: none;  
+
+    }
+}
+
+.boton1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 120px;
+    height: 20px;
+    padding: 10px 40px;
+    background-color: rgb(252, 79, 5);
+    border-radius: 25px;
+    border: none;
+    margin-right: 40px;
+    font-size: 19px;
+    box-shadow: 0 0 20px rgba(255, 115, 0, 1);
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    
+    
+}
+
+.boton1:hover{
+
+    background-color: rgb(227, 66, 48);
+    
+
+}
+
+.boton2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 120px;
+    height: 20px;
+    padding: 10px 40px;
+    background-color: rgb(252, 79, 5);
+    border-radius: 25px;
+    border: none;
+    margin-left: 40px;
+    font-size: 19px;
+    box-shadow: 0 0 20px rgba(255, 115, 0, 1);
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+}
+
+.boton2:hover{
+
+    background-color: rgb(227, 66, 48);
+    
+
+}
+
+.Favorites{
+
+    font-size: 20px;
+    color: white;
+    margin-top: 100px;
+    h2{
+
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 400;
+
+    }
+
+}
+
+.texto1{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.texto1 p{
+
+    background-color: rgb(252, 79, 5);
+    width: 90px;
+    height: 3px;
+    margin-left: 20px;  
+    margin-bottom: 10px;
+}
+
+.images{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.imagenes{
+
+    width: 170px;
+    height: 230px; 
+    overflow: hidden; 
+    position: relative;
+    border-radius: 30px;
+}
+
+.imagenes .fortnite{
+
+    width: 400px; 
+    height: 230px;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.imagenes .warzone{
+
+    width: 400px; 
+    height: 230px;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.imagenes .fallguys{
+
+    width: 400px; 
+    height: 230px;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.imagenes .genshinimpact{
+
+    width: 400px; 
+    height: 230px;
+    position: absolute;
+    border-radius: 30px;
 }
