@@ -104,7 +104,7 @@ body{
 .infomas .inicio{
 
     font-size: 17px;
-    padding-top: 20px;
+    padding-top: 15px;
     margin-bottom: 10px;
     width: 400px;
     display: flex;
@@ -265,7 +265,8 @@ body{
 .images{
 
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    align-items: center;  
 
 }
 
@@ -276,7 +277,7 @@ body{
     overflow: hidden; 
     position: relative;
     border-radius: 30px;
-    margin-left: 30px;
+    margin-left: 70px;
     margin-top: 60px;
     display: flex;
     
@@ -342,6 +343,7 @@ body{
     position: relative;
     border-radius: 30px;
     margin-left: 30px;
+    margin-right: 70px;
     margin-top: 60px;
     display: flex;
     justify-content: center;
@@ -353,4 +355,31 @@ body{
     height: 250px;
     position: absolute;
     border-radius: 30px;
+}
+
+.flecha{
+
+    color: rgb(84, 84, 84);
+    font-size: 100px;
+    margin-top: 50px;
+
+}
+
+.titulo{
+
+    color: white;
+
+}
+
+.corazon{
+
+    color: white;
+
+}
+
+.juegostodo{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 }
