@@ -373,7 +373,7 @@ body{
 
 .corazon{
 
-    color: white;
+    color: #ff7236;
 
 }
 
@@ -382,4 +382,90 @@ body{
         display: flex;
         align-items: center;
         flex-direction: column;
+}
+
+.juego1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 300;
+    h4{
+        margin-left: 70px;
+    }
+    i{
+        margin-left: 115px;
+    }
+}
+
+.juego2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 300;
+    h4{
+        margin-left: 32px;
+    }
+    i{
+        margin-left: 87px;
+    }
+}
+
+.juego3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 300;
+    h4{
+        margin-left: 30px;
+    }
+    i{
+        margin-left: 100px;
+    }
+}
+
+.juego4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 300;
+    h4{
+        margin-left: -40px;
+    }
+    i{
+        margin-left: 55px;
+    }
+}
+
+.footer{
+
+    margin-top: 100px;
+    p{
+        color: white;
+        font-size: 20px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 300;
+    }
+
+    .active{
+
+        display: flex;
+        align-items: center;
+    }
+}
+
+.footerinicio{
+
+    display: flex;
+    align-items: center;
+    h1{
+        color: white;
+        margin-left: 20px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
 }
