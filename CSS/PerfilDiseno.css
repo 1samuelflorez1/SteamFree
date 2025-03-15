@@ -1,6 +1,6 @@
 body{
 
-    background-image: url(../Recursos/USUARIO.jpg);
+    background-image: url(../assets/USUARIO.jpg);
     background-size: cover;
     margin-left: 220px;
     margin-top: 40px;
@@ -172,7 +172,7 @@ body{
     margin-top: 50px;
     a{
 
-      text-decoration: none;  
+    text-decoration: none;  
 
     }
 }
