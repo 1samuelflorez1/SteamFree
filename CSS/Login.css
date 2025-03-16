@@ -152,7 +152,6 @@ body{
     background-color: #ab4415;
     border-radius: 50px;
     color: white;
-    
 }
 
 button:hover{
@@ -174,6 +173,12 @@ button:hover{
         color: white;
         border: none;
         text-decoration: none;
+    }
+}
+
+.cuadro-central .ultimo:hover{
+    a{
+    text-decoration: underline;
     }
 }
 

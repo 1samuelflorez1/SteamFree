@@ -250,3 +250,9 @@ button:hover{
         text-decoration: none;
     }
 }
+
+.cuadro-central .ultimo:hover{
+    a{
+    text-decoration: underline;
+    }
+}
