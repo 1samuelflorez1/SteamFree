@@ -101,8 +101,8 @@ header a:hover{
 
 .game-cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 40px;
 }
 
@@ -111,7 +111,6 @@ header a:hover{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    align-self: center;
 }
 
 .cards{
