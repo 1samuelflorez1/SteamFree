@@ -98,29 +98,39 @@ header a:hover{
 
 /*------------estilos cards--------------*/
 
-.game-card{
+.cards{
     margin-top: 35px;
     width: 160px;
-    height: 200px;
+    height: 260px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    font-family: 'Nippo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.img-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-card img{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .game-card h3{
     font-weight: 400;
-}
-
-.free{
-    color: #fd5105;
-}
-
-.game-card img{
-    width: 100%;
-    height: 200px;
-    border-radius: 15px;
-    object-fit: cover;
+    color: white;
 }
