@@ -4,9 +4,9 @@
 body{
     background-image: url(../assets/background-catalog.jpg);
     background-size: cover;
-    margin-left: 220px;
-    margin-top: 40px;
-    margin-right: 220px;
+    margin: 40px auto; 
+    max-width: 1200px; 
+    padding: 0 20px; 
 }
 
 /*----------fin estilos generales----------*/
@@ -40,11 +40,12 @@ header a:hover{
 
 .logo-img{
     height: 50px;
+    margin-right: 30px;
     filter:  invert(20%) brightness(1000%);
 }
 
 .nav-link{
-    padding: 30px;
+    padding-right: 30px;
 }
 
 /*------------fin estilos header--------*/
@@ -59,12 +60,13 @@ header a:hover{
 
 .search-bar{
     display: flex;
-    align-items: center;
-    width: 400px;
+    width: 100%; 
+    max-width: 400px; 
     height: 25px;
     border: 1px solid #fd5105;
     border-radius: 50px;
     padding: 5px 15px;
+    margin-left: 60px;
     background: transparent;
     position: relative;
 }
@@ -76,12 +78,12 @@ header a:hover{
     background: transparent;
     outline: none;
     color: white;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .search-bar input::placeholder {
     color: rgba(255, 255, 255, 0.591);
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .search-bar button {
@@ -93,4 +95,113 @@ header a:hover{
 .search-bar button i {
     color: #fd5105;
     font-size: 1.4rem;
+}
+
+/*---------fin estilos barra búsqueda----------*/
+
+/*------------estilos cards--------------*/
+
+.game-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-element{
+    display: flex;
+    padding: 0;
+}
+
+
+.game-container{
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+    align-items: center; 
+    flex: 1;
+}
+
+.cards{
+    
+    margin-top: 70px;
+    width: 175px;
+    height: 260px;
+    backdrop-filter: blur(0.8);
+    -webkit-backdrop-filter: blur(0.8);
+    border-radius: 25px;
+    box-shadow: 
+        inset 0 0 50px rgba(207, 205, 205, 0.486),
+        0 0 15px rgba(210, 208, 208, 0.068);
+    font-family: 'Nippo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f800   
+}
+
+.img-card img{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.name-icon{
+    display: flex;
+    align-items: center;
+    color: white;
+    i{
+        margin-left: 15px;
+        font-size: 12px;
+    }
+}
+
+.text-card h3{
+    margin-top: 0;
+    margin-left: 30px;
+    margin-bottom: -2px;
+    padding: 0;
+    font-weight: 400;
+    color: white;
+    font-size: 17px;
+}
+
+.text-card p{
+    margin: 0;
+    margin-bottom: -13px;
+    color: #fd5105;
+    padding: 0;
+    font-size: 13px;
+}
+
+.text-card{
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+
+.button-card{
+    margin-bottom: -10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #fd5105;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 115, 0, 1);
+    cursor: pointer;
+}
+
+.button-card:hover{
+    background-color: rgb(227, 66, 48);
 }
