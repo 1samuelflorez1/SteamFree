@@ -137,7 +137,7 @@ header a:hover{
 /* producto estilo*/
 
 .game-details {
-    margin-top: 200px;
+    margin-top: 220px;
     padding: 20px 0;
     margin-left: 50px;
     border-radius: 15px;
@@ -150,14 +150,13 @@ header a:hover{
 
 .free {
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .subtext {
-    font-size: 22px;
+    font-size: 19px;
     color: #818181;
     margin-bottom: 20px;
-    padding-bottom: 15px;
 }
 
 .play-btn, .fav-btn {
@@ -204,7 +203,7 @@ header a:hover{
 
 .details {
     color: #B2B2B2;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .details p {
