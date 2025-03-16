@@ -59,12 +59,13 @@ header a:hover{
 
 .search-bar{
     display: flex;
-    align-items: center;
-    width: 450px;
+    width: 100%; 
+    max-width: 400px; 
     height: 25px;
     border: 1px solid #fd5105;
     border-radius: 50px;
     padding: 5px 15px;
+    margin-left: 60px;
     background: transparent;
     position: relative;
 }
