@@ -2,7 +2,18 @@ body{
 
     background-image: url(../assets/USUARIO.jpg);
     background-size: cover;
-    
+    margin-left: 0px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+
+}
+
+.general{
+
+    margin: 40px auto; 
+    margin-bottom: 0;
+    max-width: 1200px; 
+    padding: 0 20px;
 }
 
 
@@ -452,7 +463,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     font-family: 'Satoshi', sans-serif;
 }
 
@@ -511,9 +522,9 @@ footer {
 .footer-divider {
     width: 1px;
     padding:0;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.3);
-    margin-top: 30px;
+    height: 340px;
+    background: rgba(255, 255, 255);
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
@@ -546,11 +557,12 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    padding: 15px;
+    padding: 1px;
     background: #fd5105;
     color: white;
     font-size: 20px;
     font-weight: bold;
+    width: 100%;
 }
 
 
