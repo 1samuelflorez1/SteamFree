@@ -152,13 +152,15 @@ body{
     background-color: #ab4415;
     border-radius: 50px;
     color: white;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
     
 }
 
 button:hover{
 
     background-color: #cc531b;
-    color: rgb(172, 172, 172);
+    color: rgb(255, 255, 255);
 
 }
 
@@ -174,6 +176,12 @@ button:hover{
         color: white;
         border: none;
         text-decoration: none;
+    }
+}
+
+.cuadro-central .ultimo:hover{
+    a{
+    text-decoration: underline;
     }
 }
 
