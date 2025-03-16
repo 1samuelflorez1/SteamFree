@@ -1,7 +1,7 @@
 /*estilo general*/
 
 body{
-    background-image: url(../assets/backgorund-product.jpg);/* Corregido typo en 'background' */
+    background-image: url(../assets/backgorund-product.jpg);
     background-size: cover;
     margin-left: 0px;
     margin-right: 2px;
