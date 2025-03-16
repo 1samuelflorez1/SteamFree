@@ -2,7 +2,20 @@ body{
 
     background-image: url(../assets/LANDING.jpg);
     background-size: cover;
+    margin-left: 0px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+}
+
+
+
+.general{
+
     margin: 40px auto; 
+    margin-bottom: 0;
     max-width: 1200px; 
     padding: 0 20px;
 
@@ -27,7 +40,7 @@ header{
 
 header .texto{
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Satoshi', sans-serif;
     font-weight: 200;
     
@@ -90,4 +103,26 @@ header .texto :hover{
 
 .fav-btn:hover{
     background-color: #c73f01;
+}
+
+
+
+.color-dot{
+
+    height: 1000px;
+    width: 1000px;
+    background: radial-gradient(closest-side, rgba(189, 67, 249), rgba(0, 0, 0, 0.1));
+    opacity: 0.5;
+    position: absolute;
+    left: -520px;
+    top: 200px;
+}
+
+.color-dot2{
+
+    height: 1000px;
+    width: 1000px;
+    background: radial-gradient(closest-side, rgba(254, 81, 2), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    left: 1000px;
 }
