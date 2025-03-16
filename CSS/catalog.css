@@ -99,8 +99,15 @@ header a:hover{
 
 /*------------estilos cards--------------*/
 
-
 .game-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.game-container{
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -108,7 +115,7 @@ header a:hover{
 }
 
 .cards{
-    margin-top: 35px;
+    margin-top: 70px;
     width: 160px;
     height: 260px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -145,7 +152,7 @@ header a:hover{
     object-position: center;
 }
 
-.icon{
+.name-icon{
     display: flex;
     align-items: center;
     color: white;
