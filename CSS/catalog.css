@@ -210,6 +210,7 @@ header a:hover{
 
 /*---------estilos newsletter-------*/
 
+
 .started-text{
     display: flex;
     justify-content: center;
@@ -219,7 +220,7 @@ header a:hover{
     h1{
         font-family: 'Nippo', sans-serif;
         font-weight: 400;
-        font-size: 50px;
+        font-size: 45px;
     }
 }
 
@@ -236,10 +237,195 @@ header a:hover{
     h1{
         font-family: 'Nippo', sans-serif;
         font-weight: 400;
-        font-size: 50px;
+        font-size: 45px;
     }
 }
 
 .purple{
     color: #bb4ef7;
 }
+
+/*--------bar estilos newsletter-------*/
+
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-container{
+    align-items: center;
+    border: 2px solid #ff7434;
+    border-radius: 50px;
+    padding: 5px;
+    width:500px;
+    background-color: transparent;
+    height: 35px;
+    display: flex;
+}
+
+.newsletter-input{
+    flex-grow: 1;
+    border: none;
+    background: none;
+    color: #ff4902;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+}
+
+.newsletter-input::placeholder{
+    color: #ff4902;
+}
+
+.newsletter-button {
+    background-color: #fd5105;
+    color: white;
+    height: 35px;
+    width: 100px;
+    border: 3px solid #ff7434;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-button:hover {
+    background-color: #ff4400b9;
+}
+
+/*--------fin bar estilos newsletter-------*/
+
+/*-------- estilos footer---------------*/
+/*footer*/
+
+footer {
+    margin-top: 150px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.footer-left {
+    max-width: 300px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.logo img {
+    margin-right: 30px;
+    height: 50px;
+    filter: invert(20%) brightness(1000%);
+}
+
+.footer-left p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.active-text {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Nippo';
+}
+
+.active-text span {
+    color: #fd5105;
+}
+
+
+.social-icons i {
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #fd5105;
+    transition: color 0.3s ease;
+}
+
+.footer-right {
+    display: flex;
+    gap: 180px;
+}
+
+.footer-divider {
+    width: 1px;
+    padding:0;
+    height: 320px;
+    background: rgba(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.footer-column h3 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+    margin-top: 7px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fd5105;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1px;
+    background: #fd5105;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+.footer-bottom p {
+    font-family: 'Satoshi',sans-serif;
+}
+
+.footer-bottom span {
+    color: #47006C;
+}
+
+
+
