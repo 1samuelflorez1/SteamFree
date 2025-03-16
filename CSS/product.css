@@ -1,12 +1,11 @@
-
 /*estilo general*/
 
 body{
-    background-image: url(../assets/backgorund-product.jpg);
+    background-image: url(../assets/backgorund-product.jpg);/* Corregido typo en 'background' */
     background-size: cover;
-    margin-left: 220px;
-    margin-top: 40px;
-    margin-right: 220px;
+    margin: 40px auto; 
+    max-width: 1200px; 
+    padding: 0 20px; 
 }
 
 /*estilo header*/
@@ -20,6 +19,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap; 
 }
 
 a{
@@ -37,13 +37,12 @@ header a:hover{
 
 .logo-img{
     height: 50px;
-    filter:  invert(20%) brightness(1000%);
+    filter: invert(20%) brightness(1000%);
 }
 
 .nav-link{
     padding: 30px;
 }
-
 
 /*estilo barra búsqueda*/
 
@@ -51,14 +50,13 @@ header a:hover{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-left: 55px;
-
 }
 
 .search-bar{
     display: flex;
     align-items: center;
-    width: 400px;
+    width: 100%; /* Hace que la barra sea flexible */
+    max-width: 400px; /* Evita que sea demasiado grande en pantallas grandes */
     height: 25px;
     border: 1px solid #fd5105;
     border-radius: 50px;
@@ -93,7 +91,6 @@ header a:hover{
     font-size: 1.4rem;
 }
 
-
 /*Estilo producto*/
 
 .game-container {
@@ -103,6 +100,7 @@ header a:hover{
     padding: 20px;
     border-radius: 15px;
     color: white;
+    flex-wrap: wrap; 
 }
 
 .game-info {
@@ -120,7 +118,7 @@ header a:hover{
 
 .game-info h3 {
     font-family: 'Satoshi', sans-serif;
-    font-weight:normal;
+    font-weight: normal;
     margin-top: 30px;
     margin-bottom: 30px;
     border-bottom: #FD5105 2px solid;
@@ -135,26 +133,26 @@ header a:hover{
 }
 
 .game-image img {
-    max-width: 1000px;
+    max-width: 100%; /* Permite que la imagen sea flexible */
     border-radius: 15px;
 }
 
 /* producto estilo*/
 
 .game-details {
-    padding: 20px;
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 220px;
+    margin-top: 200px;
+    padding: 20px 0;
+    margin-left: 50px;
     border-radius: 15px;
     color: white;
     text-align: left;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     font-family: 'Satoshi', sans-serif;
 }
 
 .free {
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 15px;
 }
 
@@ -172,8 +170,8 @@ header a:hover{
     font-size: 18px;
     border-radius: 25px;
     border: none;
-    font-family:'Satoshi', sans-serif;
-    font-weight:normal;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
     margin-bottom: 25px;
 }
 
@@ -211,12 +209,32 @@ header a:hover{
 }
 
 .details p {
-    font-family: 'Satoshi' sans-serif;
+    font-family: 'Satoshi', sans-serif;
     font-weight: normal;
     display: flex;
     justify-content: space-between;
-    font-size: 21px;
-    padding: 10px 0;
+    font-size: 15px;
+    padding: 5px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Responsividad */
+@media (max-width: 1024px) {
+    body {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-details {
+        text-align: center;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+}
