@@ -122,7 +122,7 @@ header .texto :hover{
 
     height: 1000px;
     width: 1000px;
-    background: radial-gradient(closest-side, rgba(254, 81, 2), rgba(0, 0, 0, 0.1));
+    background: radial-gradient(closest-side, rgba(254, 81, 2), rgba(0, 0, 0, 0.01));
     position: absolute;
     left: 1000px;
 }
