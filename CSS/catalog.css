@@ -5,7 +5,6 @@ body{
     background-image: url(../assets/background-catalog.jpg);
     background-size: cover;
     margin: 40px auto; 
-    margin-bottom: 0;
     max-width: 1200px; 
     padding: 0 20px; 
 }
@@ -22,7 +21,7 @@ header{
     font-size: 1em;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 a{
@@ -40,6 +39,7 @@ header a:hover{
 
 .logo-img{
     height: 50px;
+    margin-right: 30px;
     filter:  invert(20%) brightness(1000%);
 }
 
@@ -102,6 +102,11 @@ header a:hover{
 .game-cards{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    justify-content: center;
+    gap: 10px;
+>>>>>>> 192797da12aa2a1d340c9ab4816f8b6c1676223e
 }
 
 .card-element{
@@ -112,6 +117,7 @@ header a:hover{
 
 .game-container{
     display: flex;
+    gap: 13px;
     flex-direction: column;
     align-items: center; 
     flex: 1;
@@ -120,7 +126,7 @@ header a:hover{
 .cards{
     
     margin-top: 70px;
-    width: 160px;
+    width: 175px;
     height: 260px;
     backdrop-filter: blur(0.8);
     -webkit-backdrop-filter: blur(0.8);
@@ -134,8 +140,19 @@ header a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
+<<<<<<< HEAD
     padding: 10px;
     background-color: #f8f8f800   
+=======
+    padding: 15px;
+}
+
+.img-card{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5px;
+>>>>>>> 192797da12aa2a1d340c9ab4816f8b6c1676223e
 }
 
 .img-card img{
