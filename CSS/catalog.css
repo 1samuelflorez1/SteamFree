@@ -5,7 +5,6 @@ body{
     background-image: url(../assets/background-catalog.jpg);
     background-size: cover;
     margin: 40px auto; 
-    margin-bottom: 0;
     max-width: 1200px; 
     padding: 0 20px; 
 }
@@ -22,7 +21,8 @@ header{
     font-size: 1em;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 10px;  
+    
 }
 
 a{
@@ -40,6 +40,7 @@ header a:hover{
 
 .logo-img{
     height: 50px;
+    margin-right: 30px;
     filter:  invert(20%) brightness(1000%);
 }
 
@@ -59,12 +60,13 @@ header a:hover{
 
 .search-bar{
     display: flex;
-    align-items: center;
-    width: 450px;
+    width: 100%; 
+    max-width: 400px; 
     height: 25px;
     border: 1px solid #fd5105;
     border-radius: 50px;
     padding: 5px 15px;
+    margin-left: 60px;
     background: transparent;
     position: relative;
 }
@@ -103,32 +105,34 @@ header a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
 }
 
 .card-element{
     display: flex;
-    justify-content: space-between;
+    padding: 0;
 }
 
 
 .game-container{
     display: flex;
+    gap: 13px;
     flex-direction: column;
     align-items: center; 
     flex: 1;
 }
 
 .cards{
+    
     margin-top: 70px;
-    width: 160px;
+    width: 185px;
     height: 260px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(0.8);
+    -webkit-backdrop-filter: blur(0.8);
     border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 
+        inset 0 0 50px rgba(207, 205, 205, 0.486),
+        0 0 15px rgba(210, 208, 208, 0.068);
     font-family: 'Nippo', sans-serif;
     display: flex;
     flex-direction: column;
@@ -136,6 +140,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     padding: 10px;
+    background-color: #f8f8f800;
 }
 
 .img-card{
@@ -209,3 +214,4 @@ header a:hover{
 .button-card:hover{
     background-color: rgb(227, 66, 48);
 }
+
