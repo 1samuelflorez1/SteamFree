@@ -21,7 +21,8 @@ header{
     font-size: 1em;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px;  
+    
 }
 
 a{
@@ -103,6 +104,8 @@ header a:hover{
 .game-cards{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 .card-element{
@@ -137,7 +140,14 @@ header a:hover{
     justify-content: center;
     text-align: center;
     padding: 10px;
-    background-color: #f8f8f800   
+    background-color: #f8f8f800;
+}
+
+.img-card{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5px;
 }
 
 .img-card img{
@@ -204,3 +214,4 @@ header a:hover{
 .button-card:hover{
     background-color: rgb(227, 66, 48);
 }
+
