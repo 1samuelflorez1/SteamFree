@@ -101,9 +101,14 @@ header a:hover{
 
 .game-cards{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 40px;
+}
+
+.card-element{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -111,6 +116,7 @@ header a:hover{
     display: flex;
     flex-direction: column;
     align-items: center; 
+    flex: 1;
 }
 
 .cards{
@@ -194,7 +200,7 @@ header a:hover{
     border: none;
     border-radius: 30px;
     font-family: 'Satoshi', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     box-shadow: 0 0 20px rgba(255, 115, 0, 1);
     cursor: pointer;
