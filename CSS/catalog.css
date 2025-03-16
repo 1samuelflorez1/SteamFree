@@ -1,10 +1,18 @@
 
 /*------estilos generales---------*/
-
 body{
-    background-image: url(../assets/background-catalog.jpg);
+    background-image: url(../assets/backgorund-product.jpg);
     background-size: cover;
+    margin-left: 0px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+
+}
+
+.general{
+
     margin: 40px auto; 
+    margin-bottom: 0;
     max-width: 1200px; 
     padding: 0 20px;
 }
@@ -227,6 +235,7 @@ header a:hover{
         font-family: 'Nippo', sans-serif;
         font-weight: 400;
         font-size: 45px;
+        margin-bottom: 50px;
     }
 }
 
@@ -262,6 +271,8 @@ header a:hover{
 
 .newsletter-container{
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
     border: 2px solid #ff7434;
     border-radius: 50px;
     padding: 5px;
@@ -282,7 +293,7 @@ header a:hover{
 }
 
 .newsletter-input::placeholder{
-    color: #ff4902;
+    color: #ff5b1b;
 }
 
 .newsletter-button {
@@ -290,7 +301,7 @@ header a:hover{
     color: white;
     height: 35px;
     width: 100px;
-    border: 3px solid #ff7434;
+    border: 3px solid #ff5b10;
     padding: 10px 20px;
     border-radius: 50px;
     font-size: 16px;
@@ -317,6 +328,7 @@ footer {
 }
 
 .footer-container {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
