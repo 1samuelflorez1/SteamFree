@@ -102,8 +102,13 @@ header a:hover{
 /*------------estilos cards--------------*/
 
 .game-cards{
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
+=======
+    justify-content: center;
+    gap: 10px;
+>>>>>>> 16d20821bb02d03a5ea63426cd3b5fd1a820c77a
 }
 
 .card-element{
@@ -132,6 +137,7 @@ header a:hover{
         inset 0 0 50px rgba(207, 205, 205, 0.486),
         0 0 15px rgba(210, 208, 208, 0.068);
     font-family: 'Nippo', sans-serif;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,6 +145,16 @@ header a:hover{
     text-align: center;
     padding: 10px;
     background-color: #f8f8f800   
+=======
+    background-color: #f8f8f800
+}
+
+.img-card{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5px;
+>>>>>>> 16d20821bb02d03a5ea63426cd3b5fd1a820c77a
 }
 
 .img-card img{
@@ -205,3 +221,4 @@ header a:hover{
 .button-card:hover{
     background-color: rgb(227, 66, 48);
 }
+
