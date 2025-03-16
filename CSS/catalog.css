@@ -103,11 +103,6 @@ header a:hover{
 .game-cards{
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-=======
-    justify-content: center;
-    gap: 10px;
->>>>>>> 192797da12aa2a1d340c9ab4816f8b6c1676223e
 }
 
 .card-element{
@@ -141,19 +136,8 @@ header a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-<<<<<<< HEAD
     padding: 10px;
     background-color: #f8f8f800   
-=======
-    padding: 15px;
-}
-
-.img-card{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 5px;
->>>>>>> 192797da12aa2a1d340c9ab4816f8b6c1676223e
 }
 
 .img-card img{
