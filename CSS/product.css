@@ -28,6 +28,7 @@ a{
 }
 
 header a:hover{
+    transition: color 0.3s ease;
     color: #fd5105;
 }
 
@@ -215,4 +216,5 @@ header a:hover{
     padding: 5px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 

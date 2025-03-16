@@ -21,7 +21,8 @@ header{
     font-size: 1em;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px;  
+    
 }
 
 a{
@@ -101,6 +102,8 @@ header a:hover{
 /*------------estilos cards--------------*/
 
 .game-cards{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
@@ -131,7 +134,13 @@ header a:hover{
         inset 0 0 50px rgba(207, 205, 205, 0.486),
         0 0 15px rgba(210, 208, 208, 0.068);
     font-family: 'Nippo', sans-serif;
-    background-color: #f8f8f800
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f800;
 }
 
 .img-card{
