@@ -28,7 +28,6 @@ a{
 }
 
 header a:hover{
-    transition: color 0.3s ease;
     color: #fd5105;
 }
 
@@ -138,7 +137,7 @@ header a:hover{
 /* producto estilo*/
 
 .game-details {
-    margin-top: 220px;
+    margin-top: 170px;
     padding: 20px 0;
     margin-left: 50px;
     border-radius: 15px;
@@ -190,6 +189,15 @@ header a:hover{
     0px 5px 10px rgba(73, 20, 1, 0.5); 
 }
 
+.description {
+    margin-top: 20px;
+    font-size: 27px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+
+}
+
 /*HOVER*/
 
 .play-btn:hover {
@@ -216,5 +224,4 @@ header a:hover{
     padding: 5px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 

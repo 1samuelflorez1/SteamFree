@@ -1,5 +1,5 @@
 body{
-    background-image: url(../assets/LOGIN.jpg);
+    background-image: url(../assets/SIGNUP.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ body{
 
 .cuadro-central{
     width: 350px;
-    height: 410px;
+    height: 500px;
     border-radius: 30px;
     margin-top: 140px;
     background-color: #fafafa25;
@@ -83,6 +83,7 @@ body{
     position: relative;
     margin-bottom: 0px;
     text-align: left;
+    margin-top: 10px;
 }
 
 .form2 input{
@@ -114,6 +115,78 @@ body{
     color: gray;
 }
 
+.form3 {
+    position: relative;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form3 input{
+    padding: 10px;
+    padding-left: 40px;
+    border: 0px solid gray;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    color: white;
+    color: rgb(172, 172, 172);;
+
+}
+
+.form3 .icono {
+
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: rgb(172, 172, 172);
+}
+
+.form3 .icono2 {
+
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: gray;
+}
+
+.form4 {
+    position: relative;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form4 input{
+    padding: 10px;
+    padding-left: 40px;
+    border: 0px solid gray;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    color: white;
+    color: rgb(172, 172, 172);;
+
+}
+
+.form4 .icono {
+
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: rgb(172, 172, 172);
+}
+
+.form4 .icono2 {
+
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: gray;
+}
+
 /*Apartado de recordar contraseña*/
 
 .recordar{
@@ -122,6 +195,7 @@ body{
     align-items: center;
     color: white;
     margin-top: 10px;
+    margin-left: 65px;
     
     i{
         margin-left: 5px;
@@ -168,27 +242,11 @@ button:hover{
     font-weight: 400;
     font-size: 10px;  
     margin-left: 26px;
-    margin-top: 30px;
+    margin-top: 24px;
     a{
 
         color: white;
         border: none;
         text-decoration: none;
     }
-}
-
-.join{
-    margin-top: 90px;
-    color: white;
-    font-size: 12px;
-    font-family: 'Satoshi', sans-serif;
-    font-weight: 400;
-    font-size: 10px; 
-    margin-bottom: 0px;
-}
-
-.perfiles{
-    width: 110px;
-    margin-top: -10px;
-
 }
