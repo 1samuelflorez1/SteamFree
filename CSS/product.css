@@ -4,7 +4,7 @@ body{
     background-image: url(../assets/backgorund-product.jpg);/* Corregido typo en 'background' */
     background-size: cover;
     margin: 40px auto; 
-    max-width: 1200px; 
+    max-width: 1400px; 
     padding: 0 20px; 
 }
 
@@ -218,23 +218,3 @@ header a:hover{
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Responsividad */
-@media (max-width: 1024px) {
-    body {
-        margin: 20px auto;
-        padding: 0 10px;
-    }
-
-    .game-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .game-details {
-        text-align: center;
-    }
-
-    .search-bar {
-        max-width: 100%;
-    }
-}
