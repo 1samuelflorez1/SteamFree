@@ -18,6 +18,7 @@ body{
         0 0 15px rgb(255, 255, 255, 0.7);
     display: flex;
     justify-content: center;
+    
 }
 
 .superior{
@@ -40,5 +41,61 @@ body{
     margin-top: 25px;
 }
 
+.form {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form input{
+    padding: 10px;
+    padding-left: 40px;
+    border: 0px solid gray;
+    border-bottom: 1px solid rgb(154, 154, 154);
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    color: white;
+}
+
+.form .icono {
+
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: gray;
+}
 
 
+
+.form2 {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form2 input{
+    padding: 10px;
+    padding-left: 40px;
+    border: 0px solid gray;
+    border-bottom: 1px solid rgb(154, 154, 154);
+    border-radius: 10px;
+    outline: none;
+    background: none;
+}
+
+.form2 .icono {
+
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: gray;
+}
+
+.form2 .icono2 {
+
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: gray;
+}
