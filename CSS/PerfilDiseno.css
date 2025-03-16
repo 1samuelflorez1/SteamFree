@@ -2,43 +2,47 @@ body{
 
     background-image: url(../assets/USUARIO.jpg);
     background-size: cover;
-    margin-left: 220px;
-    margin-top: 40px;
-    margin-right: 220px;
+    margin: 40px auto; 
+    margin-bottom: 0;
+    max-width: 1200px; 
+    padding: 0 20px; 
 }
 
 
-/*Parte superior de la pagina*/
 
-.header {
+/*estilo header*/
 
+header{
     display: flex;
-    align-items: center;
+    height: 70px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
     justify-content: space-between;
-    h1{
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap; 
+}
 
-        color: rgb(255, 255, 255);
-        font-family: 'Satoshi', sans-serif;
-        font-weight: 300;
-        font-size: 1em;
-        padding-right: 10px;
+a{
+    text-decoration: none;
+    color: white;
+}
 
-    }
-
-    h2{
-
-        color: white;
-
-    }
+header a:hover{
+    color: #fd5105;
 }
 
 .logo{
-
-    width: 60px;
-    height: 60px;
-    filter:  invert(20%) brightness(1000%);
-
+    display: flex;
 }
+
+.logo-img{
+    height: 40px;
+    filter: invert(20%) brightness(1000%);
+}
+
+
 
 
 /*El logo del perfil creado*/
@@ -75,7 +79,7 @@ body{
 .informacion{
 
     color: white;
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 24px;
     display: flex;
     
@@ -245,7 +249,7 @@ body{
 }
 
 .texto1{
-
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
 
@@ -438,32 +442,125 @@ body{
     }
 }
 
-.footer{
 
-    margin-top: 100px;
-    p{
-        color: white;
-        font-size: 20px;
-        font-family: 'Satoshi', sans-serif;
-        font-weight: 300;
-    }
+/*footer*/
 
-    .active{
-
-        display: flex;
-        align-items: center;
-    }
+footer {
+    margin-top: 150px;
+    color: white;
 }
 
-.footerinicio{
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    font-family: 'Satoshi', sans-serif;
+}
 
+.footer-left {
+    max-width: 300px;
+}
+
+.logo {
     display: flex;
     align-items: center;
-    h1{
-        color: white;
-        margin-left: 20px;
-        font-family: 'Satoshi', sans-serif;
-        font-weight: 400;
-        font-size: 30px;
-    }
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.logo img {
+    margin-right: 30px;
+    height: 50px;
+    filter: invert(20%) brightness(1000%);
+}
+
+.footer-left p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.active-text {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Nippo';
+}
+
+.active-text span {
+    color: #fd5105;
+}
+
+
+.social-icons i {
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #fd5105;
+    transition: color 0.3s ease;
+}
+
+.footer-right {
+    display: flex;
+    gap: 180px;
+}
+
+.footer-divider {
+    width: 1px;
+    padding:0;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.footer-column h3 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fd5105;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background: #fd5105;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.footer-bottom p {
+    font-family: 'Satoshi',sans-serif;
+}
+
+.footer-bottom span {
+    color: #47006C;
 }
