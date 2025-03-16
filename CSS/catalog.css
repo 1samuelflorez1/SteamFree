@@ -154,6 +154,7 @@ header a:hover{
 }
 
 .name-icon{
+    transition: color 0.3s ease;
     display: flex;
     align-items: center;
     color: white;
@@ -162,6 +163,11 @@ header a:hover{
         font-size: 12px;
     }
 }
+
+.name-icon:hover {
+    color: #ff5500; 
+}
+
 
 .text-card h3{
     margin-top: 0;
