@@ -225,6 +225,8 @@ body{
     border: none;
     background-color: #ab4415;
     border-radius: 50px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
     color: white;
     
 }
@@ -232,7 +234,7 @@ body{
 button:hover{
 
     background-color: #cc531b;
-    color: rgb(172, 172, 172);
+    color: rgb(255, 255, 255);
 
 }
 
