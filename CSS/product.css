@@ -3,10 +3,20 @@
 body{
     background-image: url(../assets/backgorund-product.jpg);/* Corregido typo en 'background' */
     background-size: cover;
-    margin: 40px auto; 
-    max-width: 1200px; 
-    padding: 0 20px; 
+    margin-left: 0px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+
 }
+
+.general{
+
+    margin: 40px auto; 
+    margin-bottom: 0;
+    max-width: 1200px; 
+    padding: 0 20px;
+}
+
 
 /*estilo header*/
 
@@ -225,3 +235,200 @@ header a:hover{
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/*Productos similares*/
+
+.similar-products {
+    text-align: left;
+    padding: 20px;
+}
+
+.similar-products h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: white;
+    margin-top: 170px;
+    margin-bottom: 60px;
+    font-size: 32px;
+    font-weight: normal;
+    font-family: 'Nippo', sans-serif;
+}
+
+.similar-products h2 span {
+    color: #ff5500; 
+}
+
+.line {
+    margin-top: 8px;
+    width: 90px;  
+    height: 3px;  
+    background-color: #ff5500; 
+}
+
+.products-container {
+    display: flex;
+    gap: 17px; 
+}
+
+.product-card {
+    width: 400px;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    padding:0px;
+    text-align: left;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 27px;
+}
+
+.product-card h3 {
+    font-weight:100;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-right: 215px;
+    display: inline-block;
+}
+
+
+.product-card i {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+.product-card i:hover {
+    color: #ff5500; 
+}
+
+
+/*Footer*/
+footer {
+    margin-top: 150px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-bottom: 50px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.footer-left {
+    max-width: 300px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.logo img {
+    margin-right: 30px;
+    height: 50px;
+    filter: invert(20%) brightness(1000%);
+}
+
+.footer-left p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.active-text {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Nippo';
+}
+
+.active-text span {
+    color: #fd5105;
+}
+
+
+.social-icons i {
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #fd5105;
+    transition: color 0.3s ease;
+}
+
+.footer-right {
+    display: flex;
+    gap: 180px;
+}
+
+.footer-divider {
+    width: 1px;
+    padding:0;
+    height: 320px;
+    background: rgba(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.footer-column h3 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+    margin-top: 7px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fd5105;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1px;
+    background: #fd5105;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+.footer-bottom p {
+    font-family: 'Satoshi',sans-serif;
+}
+
+.footer-bottom span {
+    color: #47006C;
+}
