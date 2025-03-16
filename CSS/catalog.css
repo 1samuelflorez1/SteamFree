@@ -151,7 +151,7 @@ header a:hover{
     color: white;
     i{
         margin-left: 15px;
-        font-size: 1em;
+        font-size: 12px;
     }
 }
 
@@ -162,15 +162,15 @@ header a:hover{
     padding: 0;
     font-weight: 400;
     color: white;
-    font-size: 1em;
+    font-size: 17px;
 }
 
 .text-card p{
     margin: 0;
-    margin-bottom: -5px;
+    margin-bottom: -13px;
     color: #fd5105;
     padding: 0;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .text-card{
