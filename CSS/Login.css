@@ -8,7 +8,7 @@ body{
 /*inicio del cuadro del login*/
 
 .cuadro-central{
-    width: 320px;
+    width: 350px;
     height: 410px;
     border-radius: 30px;
     margin-top: 140px;
@@ -36,7 +36,7 @@ body{
         font-weight: 400;
         font-size: 27px;    
         color: white;
-        margin-bottom: 5px;
+        margin-bottom: 23px;
     }
 }
 
