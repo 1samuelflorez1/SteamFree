@@ -3,11 +3,17 @@ body{
     background-size: cover;
     display: flex;
     justify-content: center;
+    margin: 40px auto; 
+    max-width: 1200px; 
+    padding: 0 20px; 
+    margin-top: 0px;
 }
 
+/*inicio del cuadro del login*/
+
 .cuadro-central{
-    width: 320px;
-    height: 380px;
+    width: 350px;
+    height: 410px;
     border-radius: 30px;
     margin-top: 140px;
     background-color: #fafafa25;
@@ -21,29 +27,34 @@ body{
     
 }
 
+/*apartado de la parte superior, (logo y titulo)*/
+
 .superior{
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70px;
+    width: auto;
     h1{
         font-family: 'Satoshi', sans-serif;
         font-weight: 400;
-        font-size: 30px;    
+        font-size: 27px;    
         color: white;
+        margin-bottom: 23px;
     }
 }
 
 .logo{
-    height: 70px;
+    height: 60px;
     filter: invert(20%) brightness(1000%);
     margin-top: 25px;
 }
 
+/*apartado del forms del login (email y contraseña)*/
+
 .form {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: left;
 }
 
@@ -51,11 +62,11 @@ body{
     padding: 10px;
     padding-left: 40px;
     border: 0px solid gray;
-    border-bottom: 1px solid rgb(154, 154, 154);
+    border-bottom: 1px solid rgb(172, 172, 172);
     border-radius: 10px;
     outline: none;
     background: none;
-    color: white;
+    color: rgb(172, 172, 172);
 }
 
 .form .icono {
@@ -63,14 +74,14 @@ body{
     position: absolute;
     left: 15px;
     top: 12px;
-    color: gray;
+    color: rgb(172, 172, 172);
 }
 
 
 
 .form2 {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-align: left;
 }
 
@@ -78,10 +89,13 @@ body{
     padding: 10px;
     padding-left: 40px;
     border: 0px solid gray;
-    border-bottom: 1px solid rgb(154, 154, 154);
+    border-bottom: 1px solid rgb(172, 172, 172);
     border-radius: 10px;
     outline: none;
     background: none;
+    color: white;
+    color: rgb(172, 172, 172);;
+
 }
 
 .form2 .icono {
@@ -89,7 +103,7 @@ body{
     position: absolute;
     left: 15px;
     top: 12px;
-    color: gray;
+    color: rgb(172, 172, 172);
 }
 
 .form2 .icono2 {
@@ -98,4 +112,83 @@ body{
     right: 10px;
     top: 12px;
     color: gray;
+}
+
+/*Apartado de recordar contraseña*/
+
+.recordar{
+
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    
+    i{
+        margin-left: 5px;
+    }
+    h4{
+        margin-left: 0px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 400;
+        font-size: 10px;  
+    }
+    p{
+        margin-left: 45px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 400;
+        font-size: 10px;  
+    }
+
+}
+
+/*Boton para ingresar sesion*/
+
+.boton button{
+    margin-top: 7px;
+    margin-left: 2px;
+    padding: 0 84px;    
+    height: 30px;
+    border: none;
+    background-color: #ab4415;
+    border-radius: 50px;
+    color: white;
+    
+}
+
+button:hover{
+
+    background-color: #cc531b;
+    color: rgb(172, 172, 172);
+
+}
+
+.cuadro-central .ultimo{
+    color: white;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 10px;  
+    margin-left: 26px;
+    margin-top: 30px;
+    a{
+
+        color: white;
+        border: none;
+        text-decoration: none;
+    }
+}
+
+.join{
+    margin-top: 90px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 10px; 
+    margin-bottom: 0px;
+}
+
+.perfiles{
+    width: 110px;
+    margin-top: -10px;
+
 }
