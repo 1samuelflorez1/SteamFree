@@ -92,3 +92,131 @@ header a:hover{
     color: #fd5105;
     font-size: 1.4rem;
 }
+
+
+/*Estilo producto*/
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.game-info {
+    flex: 1;
+    padding: 0;
+}
+
+.game-info h1 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Nippo', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.game-info h3 {
+    font-family: 'Satoshi', sans-serif;
+    font-weight:normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: #FD5105 2px solid;
+    width: 43px;
+}
+
+.rating {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.game-image img {
+    max-width: 1000px;
+    border-radius: 15px;
+}
+
+/* producto estilo*/
+
+.game-details {
+    padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 220px;
+    border-radius: 15px;
+    color: white;
+    text-align: left;
+    width: 350px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.free {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.subtext {
+    font-size: 22px;
+    color: #818181;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.play-btn, .fav-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    font-family:'Satoshi', sans-serif;
+    font-weight:normal;
+    margin-bottom: 25px;
+}
+
+.play-btn {
+    background: #FE5102;
+    color: white;
+    box-shadow: 
+    inset 0px 5px 10px rgba(255, 255, 255, 0.8), 
+    0px 5px 10px rgba(73, 20, 1, 0.5); 
+}
+
+.fav-btn {
+    background-color: #696969;
+    color: white;
+    box-shadow: 
+    inset 0px 5px 10px rgba(255, 255, 255, 0.8), 
+    0px 5px 10px rgba(73, 20, 1, 0.5); 
+}
+
+/*HOVER*/
+
+.play-btn:hover {
+    background-color: #b43900b4;
+}
+
+.fav-btn:hover {
+    background-color: #FE5102;
+}
+
+/*Detalles del producto 2*/
+
+.details {
+    color: #B2B2B2;
+    margin-top: 50px;
+}
+
+.details p {
+    font-family: 'Satoshi' sans-serif;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
