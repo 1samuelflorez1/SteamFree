@@ -3,18 +3,16 @@ body{
     background-size: cover;
     display: flex;
     justify-content: center;
+    margin: 40px auto; 
+    max-width: 1200px; 
+    padding: 0 20px; 
 }
 
 /*inicio del cuadro del login*/
 
 .cuadro-central{
-<<<<<<< HEAD
     width: 350px;
     height: 410px;
-=======
-    width: 320px;
-    height: 390px;
->>>>>>> d71ec76a03157ddd2148c145bc698377e25fd8ab
     border-radius: 30px;
     margin-top: 140px;
     background-color: #fafafa25;
