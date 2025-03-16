@@ -6,7 +6,7 @@ body{
     background-size: cover;
     margin: 40px auto; 
     max-width: 1200px; 
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 /*----------fin estilos generales----------*/
@@ -215,3 +215,40 @@ header a:hover{
     background-color: rgb(227, 66, 48);
 }
 
+/*---------fin estilos cards---------*/
+
+/*---------estilos newsletter-------*/
+
+.started-text{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 100px;
+
+    h1{
+        font-family: 'Nippo', sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+    }
+}
+
+.orange{
+    color: #fd5105;
+}
+
+.updates-text{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: -80px;
+
+    h1{
+        font-family: 'Nippo', sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+    }
+}
+
+.purple{
+    color: #bb4ef7;
+}
