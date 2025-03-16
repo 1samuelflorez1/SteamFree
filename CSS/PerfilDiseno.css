@@ -190,9 +190,10 @@ header a:hover{
     background-color: rgb(252, 79, 5);
     border-radius: 25px;
     border: none;
+    margin-top: 50px;
     margin-right: 40px;
     font-size: 19px;
-    box-shadow: 0 0 20px rgba(255, 115, 0, 1);
+    box-shadow: 0 0 10px rgba(255, 115, 0, 1);
     font-family: 'Satoshi', sans-serif;
     font-weight: 500;
     
@@ -201,7 +202,7 @@ header a:hover{
 
 .boton1:hover{
 
-    background-color: rgb(227, 66, 48);
+    background-color: rgb(253, 49, 26);
     
 
 }
@@ -213,20 +214,21 @@ header a:hover{
     color: white;
     width: 120px;
     height: 20px;
+    margin-top: 50px;
     padding: 10px 40px;
     background-color: rgb(252, 79, 5);
     border-radius: 25px;
     border: none;
     margin-left: 40px;
     font-size: 19px;
-    box-shadow: 0 0 20px rgba(255, 115, 0, 1);
+    box-shadow: 0 0 10px rgba(255, 115, 0, 1);
     font-family: 'Satoshi', sans-serif;
     font-weight: 500;
 }
 
 .boton2:hover{
 
-    background-color: rgb(227, 66, 48);
+    background-color: rgb(253, 49, 26)
     
 
 }
