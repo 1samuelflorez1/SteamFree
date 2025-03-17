@@ -21,6 +21,9 @@ body{
 
 }
 
+
+/*Header de la pagina donde se ve todo el comienzo de esta*/
+
 header{
     display: flex;
     height: 70px;
@@ -104,8 +107,10 @@ header .texto :hover{
 .fav-btn:hover{
     background-color: #c73f01;
 }
+/*Fin del header-----------------------------------*/
 
 
+/*comienzo luces con desvanecimiento*/
 
 .color-dot{
 
@@ -116,6 +121,7 @@ header .texto :hover{
     position: absolute;
     left: -520px;
     top: 200px;
+    z-index: -10;
 }
 
 .color-dot2{
@@ -125,4 +131,64 @@ header .texto :hover{
     background: radial-gradient(closest-side, rgba(254, 81, 2), rgba(0, 0, 0, 0.01));
     position: absolute;
     left: 1000px;
+    z-index: -10;
+}
+
+/*Final luces con desvanecimiento*/
+
+
+/*inicio del "titulo" de la pagina*/
+
+.start {
+    .texto1{
+        color: white;
+        font-size: 111px;
+        font-family: 'Nippo', sans-serif;
+        font-weight: 300px;
+        margin-bottom: 0px;
+        margin-top: 48px;
+    }
+    .texto2{
+        color: white;
+        font-size: 111px;
+        font-family: 'Nippo', sans-serif;
+        font-weight: 300px; 
+        margin-bottom: 0px;
+        margin-top: -158px;
+    }
+    span{color: #fd5105;
+
+    }
+}
+
+.texto3{
+
+    color: white;
+    font-size: 21px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 300px;
+    
+}
+
+.botonstart{
+    cursor: pointer;
+    background-color: #FE5102;
+    color: white;
+    box-shadow: 
+    inset 0px 5px 10px rgba(255, 255, 255, 0.8), 
+    0px 5px 10px rgba(73, 20, 1, 0.5);  
+    margin-top: 45px;
+    display: block;
+    width: 190px;
+    padding: 13px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.botonstart:hover{
+    background-color: #f96d2c;
 }
