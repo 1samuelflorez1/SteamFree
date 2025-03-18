@@ -262,3 +262,39 @@ header a:hover{
 .button-card:hover{
     background-color: rgb(227, 66, 48);
 }
+
+/*------fin estilos cards------*/
+
+/*-------estilos texto2-------*/
+.popular-games{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-games{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 100px;
+
+    h1{
+        font-family: 'Nippo', sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.shooter-text{
+    margin-top: -80px;
+}
+
+.line2 {
+    margin-top: -30px;
+    width: 90px;  
+    height: 3px;  
+    background-color: #ff5500; 
+}
+
