@@ -298,3 +298,25 @@ header a:hover{
     background-color: #ff5500; 
 }
 
+/*--------estilos categorias-------*/
+
+.categories-text{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    gap: 15px;
+}
+
+.categories-text h1{
+    color: white;
+    font-size: 35px;
+    font-weight: normal;
+    font-family: 'Nippo', sans-serif;
+}
+
+.line3{
+    margin-top: 8px;
+    width: 90px;  
+    height: 3px;  
+    background-color: #ff5500;
+}
