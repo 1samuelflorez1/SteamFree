@@ -151,3 +151,114 @@ header a:hover{
 
 /*-----fin estilos texto-------*/
 
+/*-----estilos cards--------*/
+.game-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 750px; 
+}
+
+
+.game-container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center; 
+    flex: 1;
+}
+
+.cards{
+    
+    margin-top: 70px;
+    width: 195px;
+    height: 260px;
+    backdrop-filter: blur(0.8);
+    -webkit-backdrop-filter: blur(0.8);
+    border-radius: 25px;
+    box-shadow: 
+        inset 0 0 50px rgba(207, 205, 205, 0.486),
+        0 0 15px rgba(210, 208, 208, 0.068);
+    font-family: 'Nippo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f800   
+}
+
+.img-card img{
+    display: flex;
+    position: relative;
+    width: 170px;
+    height: 200px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.name-icon{
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    color: white;
+    i{
+        margin-left: 15px;
+        font-size: 12px;
+    }
+}
+
+.name-icon:hover {
+    color: #ff5500; 
+}
+
+
+.text-card h3{
+    margin-top: 0;
+    margin-left: 30px;
+    margin-bottom: -2px;
+    padding: 0;
+    font-weight: 400;
+    color: white;
+    font-size: 17px;
+}
+
+.text-card p{
+    margin: 0;
+    margin-bottom: -13px;
+    color: #fd5105;
+    padding: 0;
+    font-size: 13px;
+}
+
+.text-card{
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+
+.button-card{
+    margin-bottom: -10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #fd5105;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 115, 0, 1);
+    cursor: pointer;
+}
+
+.button-card:hover{
+    background-color: rgb(227, 66, 48);
+}
