@@ -302,3 +302,31 @@ header .texto :hover{
     align-items: center;
 
 }
+
+/*Final del carrusel del landing*/
+
+/*Comienzo tercera parte landing page*/
+
+.cuadro1{
+
+    background-color: #cb4101;
+    width: 100px;
+    height: 100px;
+
+}
+
+.cuadro2{
+
+    background-color: #cb4101;
+    width: 100px;
+    height: 100px;
+
+}
+
+.cuadro3{
+
+    background-color: #cb4101;
+    width: 100px;
+    height: 100px;
+
+}
