@@ -307,26 +307,144 @@ header .texto :hover{
 
 /*Comienzo tercera parte landing page*/
 
+.general2{
+
+    margin: 40px auto; 
+    margin-bottom: 0;
+    max-width: 1200px; 
+    padding: 0 20px;
+    z-index: 10;
+
+}
+
+.cuadros{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
 .cuadro1{
 
-    background-color: #cb4101;
-    width: 100px;
-    height: 100px;
-
+    background: linear-gradient(to bottom, #742907, #000000);
+    border-radius: 50px;
+    width: 360px;
+    height: 300px;
+    i{
+        color: #3d1200;
+        font-size: 55px;
+        margin-bottom: 0px;
+        margin-left: 130px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100px;
+        height: 100px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        position: relative;
+        bottom: 60px;
+    }
+    .uno{
+        color: white;
+        font-family: 'Nippo', sans-serif;
+        font-weight: normal;
+        font-size: 25px;
+        margin-left: 100px;
+        margin-top: -30px;
+    }
+    .dos{
+        color: white;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: lighter;
+        font-size: 18px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
 }
 
 .cuadro2{
 
-    background-color: #cb4101;
-    width: 100px;
-    height: 100px;
-
+    background: linear-gradient(to bottom, #742907, #000000);
+    border-radius: 50px;
+    width: 360px;
+    height: 300px;
+    i{
+        color: #3d1200;
+        font-size: 55px;
+        margin-bottom: 0px;
+        margin-left: 130px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100px;
+        height: 100px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        position: relative;
+        bottom: 60px;
+    }
+    .uno{
+        color: white;
+        font-family: 'Nippo', sans-serif;
+        font-weight: normal;
+        font-size: 25px;
+        margin-left: 65px;
+        margin-top: -30px;
+    }
+    .dos{
+        color: white;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: lighter;
+        font-size: 18px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
 }
 
 .cuadro3{
 
-    background-color: #cb4101;
-    width: 100px;
-    height: 100px;
-
+    background: linear-gradient(to bottom, #742907, #000000);
+    border-radius: 50px;
+    width: 360px;
+    height: 300px;
+    i{
+        color: #3d1200;
+        font-size: 55px;
+        margin-bottom: 0px;
+        margin-left: 130px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100px;
+        height: 100px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        position: relative;
+        bottom: 60px;
+    }
+    .uno{
+        color: white;
+        font-family: 'Nippo', sans-serif;
+        font-weight: normal;
+        font-size: 25px;
+        margin-left: 93px;
+        margin-top: -30px;
+    }
+    .dos{
+        color: white;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: lighter;
+        font-size: 18px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
 }
