@@ -209,10 +209,11 @@ header .texto :hover{
 
 .carrusel img{
     width: 100%;
-    margin-top: 5px;
     margin-left: 0px;
     margin-right: 0px;
-    z-index: -99;
+    z-index: -10;
+    position: relative; 
+    top: -140px;
 }
 
 .color-dot3{
@@ -233,9 +234,8 @@ header .texto :hover{
     font-size: 120px;
     font-family: 'Nippo', sans-serif;
     font-weight: normal;
-    margin-bottom: 25px;
-    position: relative;
-    top: 625px;
+    margin-bottom: 25px; 
+    top: 560px;
     span{
 
         color: #FE5102;
@@ -249,12 +249,11 @@ header .texto :hover{
     background-color: #FE5102;
     color: white;
     box-shadow: 
-    inset 0px 5px 10px rgba(255, 255, 255, 0.8), 
+    inset 0px 1px 3px rgba(255, 255, 255, 0.5), 
     0px 5px 10px rgba(73, 20, 1, 0.5);  
-    margin-top: 45px;
     display: block;
-    width: 190px;
-    padding: 13px;
+    width: 180px;
+    padding: 12px;
     font-size: 20px;
     border-radius: 50px;
     border: none;
@@ -262,4 +261,44 @@ header .texto :hover{
     font-weight: bold;
     margin-bottom: 25px;
     position: relative;
+    top: 450px;
+}
+
+.botonlearn:hover{
+
+    background-color: #cb4101;
+
+}
+
+.carruselcentro{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 550px;
+}
+
+.imagentodo{
+    .flecha1{
+        color: rgb(160, 160, 160);
+        font-size: 100px;
+        position: absolute;
+        margin-right: 1150px;
+        margin-bottom: 130px;
+    }
+
+    .flecha2{
+        color: rgb(160, 160, 160);
+        font-size: 100px;
+        position: absolute;
+        margin-left: 1150px;
+        margin-bottom: 130px;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
