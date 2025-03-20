@@ -51,10 +51,11 @@ header a:hover{
 }
 
 .nav-link{
+    
     padding-right: 50px;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 /*El logo del perfil creado*/
