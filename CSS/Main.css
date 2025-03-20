@@ -322,7 +322,7 @@ header a:hover{
 .categories-text{
     display: flex;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 200px;
     gap: 15px;
 }
 
@@ -341,7 +341,7 @@ header a:hover{
 }
 
 .categories-container{
-    margin-top: 50px;
+    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,7 +396,7 @@ header a:hover{
 
 .titulo {
     display: flex;
-    margin-top: 320px;
+    margin-top: 200px;
     flex-direction: column;
     gap: 10px;
 }
@@ -405,7 +405,7 @@ header a:hover{
     display: flex;
     align-items: center;
     gap: 10px;
-    color: orange;
+    color: #e66b3e;
     font-size: 25px;
     font-weight: bold;
     display: flex;
