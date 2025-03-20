@@ -451,6 +451,7 @@ header a:hover{
 }
 
 .categoria{
+    position: relative;
     font-family: 'Satoshi', sans-serif;
     color: white;
     width: 350px;
@@ -470,7 +471,16 @@ header a:hover{
     background-color: #f8f8f800  
 }
 
+.categoria i{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    color: #fd5105; 
+}
+
 .categoria-cambiar {
+    position: relative;
     width: 230px;
     height: 130px;
     backdrop-filter: blur(0.8);
@@ -486,6 +496,15 @@ header a:hover{
     text-align: center;
     padding: 10px;
     background-color: #f8f8f800  
+    
+}
+
+.categoria-cambiar i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #fd5105; 
 }
 
 .categoria-cambiar {
