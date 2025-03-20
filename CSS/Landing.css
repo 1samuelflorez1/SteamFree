@@ -448,3 +448,44 @@ header .texto :hover{
         text-align: center;
     }
 }
+
+/*se finalizo la tercera parte del landing*/
+
+/*Aqui comienza el apartado de about us de steam free*/
+
+.titulo1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .uno{
+        color: white;
+        font-family: 'Nippo', sans-serif;
+        font-weight: normal;
+        font-size: 110px;
+        margin: 0px;
+        margin-bottom: 5px;
+        margin-top: 100px;
+        span{
+            color: #FE5102;
+        }
+    }
+
+    .dos{
+
+        color: white;
+        font-family: 'Nippo', sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .linea{
+        border-bottom: 3px solid #FE5102;
+        width: 138px;
+    }
+
+}
