@@ -51,6 +51,12 @@ header a:hover{
     filter: invert(20%) brightness(1000%);
 }
 
+.nav-link{
+    padding-right: 65px;
+    align-items: center;
+    justify-content: center;
+}
+
 /*estilo barra búsqueda*/
 
 .search-container{
@@ -67,7 +73,6 @@ header a:hover{
     border: 1px solid #fd5105;
     border-radius: 50px;
     padding: 5px 15px;
-    margin-left: 80px;
     background: transparent;
     position: relative;
 }

@@ -50,8 +50,11 @@ header a:hover{
     filter: invert(20%) brightness(1000%);
 }
 
-
-
+.nav-link{
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+}
 
 /*El logo del perfil creado*/
 
