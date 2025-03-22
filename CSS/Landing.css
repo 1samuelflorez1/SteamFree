@@ -90,6 +90,7 @@ header .texto :hover{
     margin-left: 410px;
 }
 
+
 .fav-btn {
     cursor: pointer;
     background-color: #FE5102;
@@ -99,6 +100,7 @@ header .texto :hover{
     0px 5px 10px rgba(73, 20, 1, 0.5); 
     margin-left: 30px;
 }
+
 
 .play-btn:hover{
     background-color: #828282;
