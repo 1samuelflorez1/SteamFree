@@ -704,7 +704,7 @@ footer {
 }
 
 .footer-container {
-    padding: 20px;
+    padding: 90px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
