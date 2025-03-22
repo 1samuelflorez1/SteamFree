@@ -88,6 +88,7 @@ header .texto :hover{
     inset 0px 5px 10px rgba(255, 255, 255, 0.8), 
     0px 5px 10px rgba(73, 20, 1, 0.5); 
     margin-left: 410px;
+    text-decoration: none;
 }
 
 
@@ -175,6 +176,7 @@ header .texto :hover{
     
 }
 
+
 .botonstart{
     cursor: pointer;
     background-color: #FE5102;
@@ -192,6 +194,11 @@ header .texto :hover{
     font-family: 'Satoshi', sans-serif;
     font-weight: bold;
     margin-bottom: 25px;
+    
+}
+
+a {
+    text-decoration: none;
 }
 
 .botonstart:hover{
