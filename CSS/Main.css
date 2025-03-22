@@ -357,7 +357,6 @@ header a:hover{
 .flecha{
     color: rgb(84, 84, 84);
     font-size: 75px;
-    margin-top: 25px;
 }
 
 .categories {
@@ -444,11 +443,6 @@ header a:hover{
     position: relative;
 }
 
-.flecha{
-    color: rgb(84, 84, 84);
-    font-size: 75px;
-    
-}
 
 .categorias {
     display: flex;
@@ -510,6 +504,10 @@ header a:hover{
     right: 20px;
     font-size: 20px;
     color: #fd5105; 
+}
+
+.margin {
+    margin-left: 110px;
 }
 
 .categoria-cambiar {
