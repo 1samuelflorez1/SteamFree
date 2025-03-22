@@ -1,6 +1,6 @@
 body{
 
-    background-image: url(../assets/Backlandingfullfull.jpg);
+    background-image: url(../assets/landingpagebackground.jpg);
     background-size: cover;
     margin-left: 0px;
     margin-right: 2px;
@@ -627,4 +627,150 @@ a {
     margin-left: 150px;
     margin-right: 150px;
     text-align: center;
+}
+
+
+/*CONTACT US*/
+.titulo2{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .dos{
+        color: white;
+        font-family: 'Nippo', sans-serif;
+        font-weight: normal;
+        font-size: 110px;
+        margin: 0px;
+        margin-bottom: 5px;
+        margin-top: 200px;
+        span{
+            color: #FE5102;
+        }
+
+    }
+
+    .linea2{
+        border-bottom: 3px solid #FE5102;
+        width: 138px;
+        
+    }
+
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    padding: 20px;
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+
+.contact-info p {
+    font-family: 'Satoshi', sans-serif;
+    font-weight:300;
+    font-size: 17px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: 'Satoshi', sans-serif;
+    font-weight:500;
+    display: inline-block;
+    font-size: 45px;
+    color: white;
+}
+
+.contact-details {
+    font-family: 'Satoshi', sans-serif;
+    margin-top: 20px;
+    color: white;
+}
+
+.details {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.iconoo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    color: white;
+    background-color: #FE5102;
+    border-radius: 90px;
+    text-align: center;
+}
+
+
+.iconoo i{
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+}
+
+
+.contact-form {
+    width: 40%;
+    max-height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+input, textarea {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    margin: 30px 0;
+    border: solid 1px #FFFFFF;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+textarea {
+    color: white;
+    height: 100px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #FE5102;
+    color: white;
+    box-shadow: 
+    inset 0px 5px 10px rgba(255, 255, 255, 0.8), 
+    0px 5px 10px rgba(73, 20, 1, 0.5);  
+    margin-top: 45px;
+    display: block;
+    width: 190px;
+    padding: 13px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-left: 150px;
+}
+
+button:hover {
+    background: #e67e22;
 }
