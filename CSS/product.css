@@ -32,6 +32,11 @@ header{
     flex-wrap: wrap; 
 }
 
+
+.bx{
+    font-size: 24px;
+}
+
 a{
     text-decoration: none;
     color: white;
