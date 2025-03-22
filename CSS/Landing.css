@@ -775,7 +775,15 @@ button:hover {
     background: #e67e22;
 }
 
-
+.line5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #fd5105;
+    height: 3px;
+    width: 850px;
+}
 
 /*-------- estilos footer---------------*/
 
