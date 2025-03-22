@@ -58,6 +58,24 @@ header a:hover{
 
 }
 
+
+.icon-user {
+    display: flex;
+}
+
+.favorite {
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.favorite:hover {
+    color: #fd5105;
+}
+
 /*El logo del perfil creado*/
 
 .logoperfil1{
@@ -384,12 +402,6 @@ header a:hover{
 .titulo{
 
     color: white;
-
-}
-
-#corazon{
-
-    color: #ff7236;
 
 }
 
