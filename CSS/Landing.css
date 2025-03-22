@@ -194,7 +194,6 @@ header .texto :hover{
     font-family: 'Satoshi', sans-serif;
     font-weight: bold;
     margin-bottom: 25px;
-    
 }
 
 a {
@@ -753,7 +752,7 @@ textarea {
     height: 100px;
 }
 
-button {
+.boton3 {
     cursor: pointer;
     background-color: #FE5102;
     color: white;
