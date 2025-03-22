@@ -33,7 +33,7 @@ header{
 }
 
 
-.bx{
+.icon-user i{
     font-size: 24px;
 }
 
@@ -278,6 +278,7 @@ header a:hover{
 .products-container {
     display: flex;
     gap: 17px; 
+    
 }
 
 .product-card {
@@ -302,8 +303,8 @@ header a:hover{
     font-size: 23px;
     color: #fff;
     margin-bottom: 0;
-    margin-right: 237px;
-    display: inline-block;
+    text-align: center;
+
 }
 
 
