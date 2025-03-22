@@ -513,6 +513,7 @@ header .texto :hover{
     font-family: 'Nippo', sans-serif;
     font-weight: normal;
     font-size: 39px;
+    text-shadow: 0 0 20px rgba(255, 80, 2, 0.8);
 }
 
 .cards{
