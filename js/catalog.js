@@ -16,10 +16,7 @@ const juegos = [
 
   },
   {
-<<<<<<< HEAD
     id: 57,
-=======
-<<<<<<< HEAD
     title: "Fortnite",
     thumbnail: "https://www.freetogame.com/g/57/thumbnail.jpg",
     short_description: "A free-to-play, standalone mode of Epic Game's Fortnite.",
@@ -30,9 +27,6 @@ const juegos = [
     developer: "Blizzard Entertainment",
     release_date: "2022-10-04",
     freetogame_profile_url: "https://www.freetogame.com/overwatch-2",
-=======
-    "id": 57,
->>>>>>> 2071386cf90bad4634eeff54f13b4717ef71e9b8
     title: "Fortnite",
     thumbnail: "https://www.freetogame.com/g/57/thumbnail.jpg",
     short_description: "A free-to-play, standalone mode of Epic Game's Fortnite. ",
@@ -43,47 +37,18 @@ const juegos = [
     developer: "Epic Games",
     release_date: "2017-09-26",
     freetogame_profile_url: "https://www.freetogame.com/fortnite-battle-royale",
->>>>>>> dcdec147040f5f43fb15dbcc92addeb2d29243cd
     descripcion: "Free to Play",
     enlace: "product.html"
   },
   {
-<<<<<<< HEAD
     title: "PUBG",
     thumbnail: "https://www.freetogame.com/g/516/thumbnail.jpg",
-=======
-    id: 516,
-    title: "PUBG: BATTLEGROUNDS",
-    thumbnail: "https://www.freetogame.com/g/516/thumbnail.jpg",
-    short_description: "Get into the action in one of the longest running battle royale games PUBG Battlegrounds.",
-    game_url: "https://www.freetogame.com/open/pubg",
-    genre: "Shooter",
-    platform: "PC (Windows)",
-    publisher: "KRAFTON, Inc.",
-    developer: "KRAFTON, Inc.",
-    release_date: "2022-01-12",
-    freetogame_profile_url: "https://www.freetogame.com/pubg",
->>>>>>> dcdec147040f5f43fb15dbcc92addeb2d29243cd
     descripcion: "Free to Play",
     enlace: "product.html"
   },
   {
-<<<<<<< HEAD
     title: "Enlisted",
     thumbnail: "https://www.freetogame.com/g/508/thumbnail.jpg",
-=======
-    id: 508,
-    title: "Enlisted",
-    thumbnail: "https://www.freetogame.com/g/508/thumbnail.jpg",
-    short_description: "Get ready to command your own World War II military squad in Gaijin and Darkflow Software’s MMO squad-based shooter Enlisted. ",
-    game_url: "https://www.freetogame.com/open/enlisted",
-    genre: "Shooter",
-    platform: "PC (Windows)",
-    publisher: "Gaijin Entertainment",
-    developer: "Darkflow Software",
-    release_date: "2021-04-08",
-    freetogame_profile_url: "https://www.freetogame.com/enlisted",
->>>>>>> dcdec147040f5f43fb15dbcc92addeb2d29243cd
     descripcion: "Free to Play",
     enlace: "product.html"
   },

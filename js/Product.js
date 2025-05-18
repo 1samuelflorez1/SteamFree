@@ -22,13 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     thumbnail.src = juego.thumbnail;
     thumbnail.alt = juego.title;
   }
-<<<<<<< HEAD
   // Descripción del juego
   const short_description = document.querySelector(".thumbnail .short_description");
-=======
-  // Descripción
-  const short_description = document.querySelector(".short_description");
->>>>>>> dcdec147040f5f43fb15dbcc92addeb2d29243cd
   if (short_description) short_description.textContent = juego.short_description;
 
   // (Opcional) Redirigir botón “Play Now” si hay enlace externo
