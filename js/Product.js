@@ -22,8 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
     thumbnail.src = juego.thumbnail;
     thumbnail.alt = juego.title;
   }
+<<<<<<< HEAD
   // Descripción del juego
   const short_description = document.querySelector(".thumbnail .short_description");
+=======
+  // Descripción
+  const short_description = document.querySelector(".short_description");
+>>>>>>> dcdec147040f5f43fb15dbcc92addeb2d29243cd
   if (short_description) short_description.textContent = juego.short_description;
 
   // (Opcional) Redirigir botón “Play Now” si hay enlace externo
@@ -33,4 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     playButton.parentElement.style.display = "none"; // Oculta el botón si no hay enlace
   }
+
+const detailsContainer = document.querySelector(".details");
+if (detailsContainer) {
+  detailsContainer.innerHTML = 
+    `<p><strong>Developer</strong> ${juego.developer}</p>
+    <p><strong>Platform</strong> ${juego.platform}</p>
+    <p><strong>Genre</strong> ${juego.genre}</p>
+    <p><strong>Release Date</strong> ${juego.release_date}</p>`
+  ;
+}
 });
