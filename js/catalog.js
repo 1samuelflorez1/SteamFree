@@ -16,24 +16,48 @@ const juegos = [
 
   },
   {
-    nombre: "Fortnite",
-    imagen: "https://www.freetogame.com/g/57/thumbnail.jpg",
+    "id": 57,
+    title: "Fortnite",
+    thumbnail: "https://www.freetogame.com/g/57/thumbnail.jpg",
+    short_description: "A free-to-play, standalone mode of Epic Game's Fortnite. ",
+    game_url: "https://www.freetogame.com/open/fortnite-battle-royale",
+    genre: "Shooter",
+    platform: "PC (Windows)",
+    publisher: "Epic Games",
+    developer: "Epic Games",
+    release_date: "2017-09-26",
+    freetogame_profile_url: "https://www.freetogame.com/fortnite-battle-royale",
     descripcion: "Free to Play",
-    texto: "A free-to-play, standalone mode of Epic Game's Fortnite.",
     enlace: "product.html"
   },
   {
-    nombre: "PUBG",
-    imagen: "https://www.freetogame.com/g/516/thumbnail.jpg",
+    id: 516,
+    title: "PUBG: BATTLEGROUNDS",
+    thumbnail: "https://www.freetogame.com/g/516/thumbnail.jpg",
+    short_description: "Get into the action in one of the longest running battle royale games PUBG Battlegrounds.",
+    game_url: "https://www.freetogame.com/open/pubg",
+    genre: "Shooter",
+    platform: "PC (Windows)",
+    publisher: "KRAFTON, Inc.",
+    developer: "KRAFTON, Inc.",
+    release_date: "2022-01-12",
+    freetogame_profile_url: "https://www.freetogame.com/pubg",
     descripcion: "Free to Play",
-    texto: "Get into the action in one of the longest running battle royale games PUBG Battlegrounds.",
     enlace: "product.html"
   },
   {
-    nombre: "Enlisted",
-    imagen: "https://www.freetogame.com/g/508/thumbnail.jpg",
+    id: 508,
+    title: "Enlisted",
+    thumbnail: "https://www.freetogame.com/g/508/thumbnail.jpg",
+    short_description: "Get ready to command your own World War II military squad in Gaijin and Darkflow Software’s MMO squad-based shooter Enlisted. ",
+    game_url: "https://www.freetogame.com/open/enlisted",
+    genre: "Shooter",
+    platform: "PC (Windows)",
+    publisher: "Gaijin Entertainment",
+    developer: "Darkflow Software",
+    release_date: "2021-04-08",
+    freetogame_profile_url: "https://www.freetogame.com/enlisted",
     descripcion: "Free to Play",
-    texto: "A hero-focused first-person team shooter from Blizzard Entertainment.",
     enlace: "product.html"
   },
   {
@@ -137,8 +161,6 @@ juegos.forEach(juego => {
     <button class="button-card" onclick='verDetalles(${JSON.stringify(juego)})'>Info</button>
 
     `
-  
-
   contenedor.appendChild(gameContainer)
 } 
 )
