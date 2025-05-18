@@ -149,8 +149,8 @@ header a:hover{
     margin-bottom: 10px;
 }
 
-.game-image img {
-    max-width: 100%; 
+.thumbnail img {
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -209,7 +209,7 @@ header a:hover{
     0px 5px 10px rgba(73, 20, 1, 0.5); 
 }
 
-.description {
+.short_description {
     margin-top: 20px;
     font-size: 27px;
     font-family: 'Satoshi', sans-serif;
