@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const short_description = document.querySelector(".thumbnail .short_description");
   if (short_description) short_description.textContent = juego.short_description;
 
+  //titulo web
+  const titulo_web = document.querySelector(".titulo_web");
+  if (titulo_web) titulo_web.textContent = juego.titulo_web
+
   // (Opcional) Redirigir botón “Play Now” si hay enlace externo
   const playButton = document.querySelector(".play-btn");
   if (playButton && juego.enlace && juego.enlace !== "#") {
