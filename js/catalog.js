@@ -16,7 +16,7 @@ const juegos = [
 
   },
   {
-    "id": 57,
+    id: 57,
     title: "Fortnite",
     thumbnail: "https://www.freetogame.com/g/57/thumbnail.jpg",
     short_description: "A free-to-play, standalone mode of Epic Game's Fortnite. ",
