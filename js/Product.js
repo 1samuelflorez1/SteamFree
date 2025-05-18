@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     thumbnail.src = juego.thumbnail;
     thumbnail.alt = juego.title;
   }
-  // Descripción
+  // Descripción del juego
   const short_description = document.querySelector(".thumbnail .short_description");
   if (short_description) short_description.textContent = juego.short_description;
 
