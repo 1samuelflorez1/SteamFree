@@ -276,6 +276,7 @@ header a:hover{
     font-size: 20px;
     color: white;
     margin-top: 100px;
+    margin-left: 160px;
     h2{
 
         font-family: 'Nippo', sans-serif;
@@ -492,6 +493,7 @@ footer {
 
 .footer-left {
     max-width: 300px;
+    margin-left: 100px;
 }
 
 .logo {
@@ -540,6 +542,8 @@ footer {
 .footer-right {
     display: flex;
     gap: 180px;
+    margin-right: 100px;
+    
 }
 
 .footer-divider {
@@ -595,4 +599,18 @@ footer {
 
 .footer-bottom span {
     color: #47006C;
+}
+
+.input-editable {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+}
+.input-editable:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }

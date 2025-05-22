@@ -18,6 +18,7 @@ const juegos = [
   },
   {
     id: 57,
+    titulo_web: "Fortnite",
     title: "Fortnite",
     thumbnail: "https://www.freetogame.com/g/57/thumbnail.jpg",
     short_description: "A free-to-play, standalone mode of Epic Game's Fortnite.",
@@ -35,7 +36,7 @@ const juegos = [
   },
   {
     id: 516,
-    titulo_web: "Fortnite",
+    titulo_web: "PUBG",
     title: "PUBG",
     thumbnail: "https://www.freetogame.com/g/516/thumbnail.jpg",
     short_description: "Get into the action in one of the longest running battle royale games PUBG Battlegrounds.",
