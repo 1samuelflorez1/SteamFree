@@ -253,7 +253,7 @@ juegos.forEach((juego, index) => {
   gameContainer.classList.add("game-container")
 
   const titulo = juego.title || juego.nombre 
-  const descripcion = juego.descripcion || juego.short_description  // || significa o
+  const descripcion = juego.descripcion || juego.short_description  
   const thumbnail = juego.thumbnail 
 
   gameContainer.innerHTML = `

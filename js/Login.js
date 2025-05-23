@@ -38,15 +38,15 @@ const usuarios = [
 ];
 
 document.getElementById("boton-final").addEventListener("click", function () {
-    const emailInput = document.getElementById("Email").value.trim();
-    const passwordInput = document.querySelector("input[type='password']").value.trim();
+    const emailInput = document.getElementById("Email").value.trim()
+    const passwordInput = document.querySelector("input[type='password']").value.trim()
 
-    const usuario = usuarios.find(user => user.email === emailInput && user.password === passwordInput);
+    const usuario = usuarios.find(user => user.email === emailInput && user.password === passwordInput)
 
     if (usuario) {
-        localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
-        window.location.href = "Perfil.html";
+        localStorage.setItem("usuarioLogueado", JSON.stringify(usuario))
+        window.location.href = "Perfil.html"
     } else {
-        alert("Email o contraseña incorrectos.");
+        alert("Email o contraseña incorrectos.")
     }
-});
+})

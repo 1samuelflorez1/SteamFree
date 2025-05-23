@@ -1,21 +1,21 @@
-const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
+const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"))
 
 if (!usuario) {
-    window.location.href = "Login.html";
+    window.location.href = "Login.html"
 }
 
-// Mostrar información personal
-const info = document.querySelectorAll(".infomas .inicio");
+
+const info = document.querySelectorAll(".infomas .inicio")
 if (info.length >= 4) {
-    info[0].textContent = usuario.nombre;
-    info[1].textContent = usuario.apellido;
-    info[2].textContent = usuario.email;
-    info[3].textContent = usuario.password;
+    info[0].textContent = usuario.nombre
+    info[1].textContent = usuario.apellido
+    info[2].textContent = usuario.email
+    info[3].textContent = usuario.password
 }
 
-// Mostrar favoritos
-const contenedor = document.querySelector(".images");
-contenedor.innerHTML = ""; // Limpiar favoritos anteriores
+
+const contenedor = document.querySelector(".images")
+contenedor.innerHTML = ""
 
 usuario.favoritos.forEach(fav => {
     const juegoHTML = `
@@ -27,7 +27,7 @@ usuario.favoritos.forEach(fav => {
                 <h4 class="titulo">${fav.titulo}</h4>
             </div>
         </div>
-    `;
-    contenedor.innerHTML += juegoHTML;
-});
+    `
+    contenedor.innerHTML += juegoHTML
+})
 
