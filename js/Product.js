@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const titulo_web = document.querySelector(".titulo_web")
   if (titulo_web) titulo_web.textContent = juego.titulo_web
 
-  const playButton = document.querySelector(".play-btn")
-  if (playButton && juego.enlace && juego.enlace !== "#") {
-    playButton.parentElement.href = juego.enlace;
-  } else {
-    playButton.parentElement.style.display = "none" 
-  }
+const playButton = document.querySelector(".play-btn")
+if (playButton && juego.link && juego.link !== "#") {
+  playButton.addEventListener("click", () => {
+    window.open(juego.link, "_blank"); // Abre el juego en una nueva pestaña
+  })
+}
 
 const detailsContainer = document.querySelector(".details")
 if (detailsContainer) {

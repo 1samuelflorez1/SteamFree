@@ -13,8 +13,8 @@ const juegos = [
     release_date: "2022-10-04",
     freetogame_profile_url: "https://www.freetogame.com/overwatch-2",
     descripcion: "Free to Play",
-    enlace: "product.html"
-
+    enlace: "product.html",
+    link: "https://overwatch.blizzard.com/es-es/"
   },
   {
     id: 57,
@@ -32,7 +32,8 @@ const juegos = [
     descripcion: "Free to Play",
     enlace: "product.html",
     release_date: "2017-09-26",
-    freetogame_profile_url: "https://www.freetogame.com/fortnite-battle-royale"
+    freetogame_profile_url: "https://www.freetogame.com/fortnite-battle-royale",
+    link: "https://www.fortnite.com/"
   },
   {
     id: 516,
@@ -48,7 +49,8 @@ const juegos = [
     release_date: "2022-01-12",
     descripcion: "Free to Play",
     freetogame_profile_url: "https://www.freetogame.com/pubg",
-    enlace: "product.html"
+    enlace: "product.html",
+    link: "https://pubg.com/es-es"
   },
   {
     id: 508,
@@ -64,7 +66,8 @@ const juegos = [
     release_date: "2021-04-08",
     descripcion: "Free to Play",
     freetogame_profile_url: "https://www.freetogame.com/enlisted",
-    enlace: "product.html"
+    enlace: "product.html",
+    link: "https://enlisted.net/es/play4free/?r=sem_21063316220_158094347006_692347405181_kwd-329456058&placement=&gad_source=1&gad_campaignid=21063316220&gbraid=0AAAAAC-DEDsinqtlm7ziurqOWCB_S_ncw&gclid=Cj0KCQjwucDBBhDxARIsANqFdr2SouAz46XRaJnwl8rOp_xeBBpEnI900ykCx8bVOyxo57wXj1xfLJoaAu1oEALw_wcB"
   },
   {
     id: 466,
@@ -80,7 +83,8 @@ const juegos = [
     release_date: "2020-06-02",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/valorant"
+    freetogame_profile_url: "https://www.freetogame.com/valorant",
+    link: "https://playvalorant.com/es-mx/"
   },
   {
     id: 3,
@@ -96,7 +100,9 @@ const juegos = [
     release_date: "2013-03-25",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/warframe"
+    freetogame_profile_url: "https://www.freetogame.com/warframe",
+    link: "https://www.warframe.com/es"
+
   },
   {
     id: 23,
@@ -112,7 +118,8 @@ const juegos = [
     release_date: "2019-02-04",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/apex-legends"
+    freetogame_profile_url: "https://www.freetogame.com/apex-legends",
+    link: "https://www.ea.com/es/games/apex-legends/apex-legends"
   },
   {
     id: 286,
@@ -128,7 +135,8 @@ const juegos = [
     release_date: "2009-10-27",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/league-of-legends"
+    freetogame_profile_url: "https://www.freetogame.com/league-of-legends",
+    link: "https://www.leagueoflegends.com/es-es/"
   },
   {
     id: 475,
@@ -144,7 +152,8 @@ const juegos = [
     descripcion: "Free to Play",
     enlace: "product.html",
     release_date: "2020-09-28",
-    freetogame_profile_url: "https://www.freetogame.com/genshin-impact"
+    freetogame_profile_url: "https://www.freetogame.com/genshin-impact",
+    link: "https://genshin.hoyoverse.com/es/"
   },
   {
     "id": 452,
@@ -160,7 +169,8 @@ const juegos = [
     release_date: "2020-03-10",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/call-of-duty-warzone"
+    freetogame_profile_url: "https://www.freetogame.com/call-of-duty-warzone",
+    link: "https://www.callofduty.com/es/warzone"
   },
   {
     id: 474,
@@ -176,7 +186,8 @@ const juegos = [
     release_date: "2020-09-24",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/rocket-league"
+    freetogame_profile_url: "https://www.freetogame.com/rocket-league",
+    link: "https://www.rocketleague.com/es-es"
   },
   {
     id: 229,
@@ -192,7 +203,8 @@ const juegos = [
     release_date: "2013-07-09",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/dota-2"
+    freetogame_profile_url: "https://www.freetogame.com/dota-2",
+    link: "https://www.dota2.com/home"
   },
   {
     id: 523,
@@ -208,7 +220,8 @@ const juegos = [
     release_date: "2020-08-04",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/fall-guys"
+    freetogame_profile_url: "https://www.freetogame.com/fall-guys",
+    link: "https://www.fallguys.com/es-ES"
   },
   {
     id: 217,
@@ -224,7 +237,8 @@ const juegos = [
     release_date: "2014-03-25",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/smite"
+    freetogame_profile_url: "https://www.freetogame.com/smite",
+    link: "https://store.steampowered.com/app/386360/SMITE/?l=spanish"
   },
   {
     "id": 212,
@@ -240,7 +254,8 @@ const juegos = [
     release_date: "2015-11-03",
     descripcion: "Free to Play",
     enlace: "product.html",
-    freetogame_profile_url: "https://www.freetogame.com/brawlhalla"
+    freetogame_profile_url: "https://www.freetogame.com/brawlhalla",
+    link: "https://www.brawlhalla.com/"
   }
 ]
 
