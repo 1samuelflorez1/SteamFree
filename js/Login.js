@@ -45,7 +45,7 @@ document.getElementById("boton-final").addEventListener("click", function () {
 
     if (usuario) {
         localStorage.setItem("usuarioLogueado", JSON.stringify(usuario))
-        window.location.href = "Perfil.html"
+        window.location.href = "Main.html"
     } else {
         alert("Email o contraseña incorrectos.")
     }
