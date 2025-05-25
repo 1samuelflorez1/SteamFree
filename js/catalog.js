@@ -240,7 +240,7 @@ const juegos = [
     link: "https://store.steampowered.com/app/386360/SMITE/?l=spanish"
   },
   {
-    "id": 212,
+    id: 212,
     titulo_web: "Brawlhalla",
     title: "Brawlhalla",
     thumbnail: "https://www.freetogame.com/g/212/thumbnail.jpg",
@@ -343,25 +343,25 @@ searchInput.addEventListener("input", () => {
 
 //Newsletter---------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-    const boton = document.getElementById("botonNews");
-    const emailInput = document.getElementById("emailNews");
+    const boton = document.getElementById("botonNews")
+    const emailInput = document.getElementById("emailNews")
 
     function suscribirse() {
-        const email = emailInput.value;
+        const email = emailInput.value
 
         if (email !== "") {
-            alert("Felicidades!! te suscribiste :D");
-            emailInput.value = ""; // Esto borra el contenido del input
+            alert("Felicidades!! te suscribiste :D")
+            emailInput.value = ""
         } else {
-            alert("Por favor escribe tu correo");
+            alert("Por favor escribe tu correo")
         }
     }
 
-    boton.addEventListener("click", suscribirse);
+    boton.addEventListener("click", suscribirse)
 
     emailInput.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
-            suscribirse();
+            suscribirse()
         }
     });
 });

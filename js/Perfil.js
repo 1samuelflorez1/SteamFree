@@ -4,7 +4,6 @@ if (!usuario) {
     window.location.href = "Login.html"
 }
 
-
 const info = document.querySelectorAll(".infomas .inicio")
 if (info.length >= 4) {
     info[0].textContent = usuario.nombre
@@ -13,25 +12,43 @@ if (info.length >= 4) {
     info[3].textContent = usuario.password
 }
 
-
 const contenedor = document.querySelector(".images")
 contenedor.innerHTML = ""
 
+
 usuario.favoritos.forEach(fav => {
-    const juegoHTML = `
-        <div class="juegostodo">
-            <div class="imagenes1">
-                <img src="${fav.imagen}" alt="${fav.titulo}">
-            </div>
-            <div class="juego1">
-                <h4 class="titulo">${fav.titulo}</h4>
-            </div>
+    const juegoDiv = document.createElement("div")
+    juegoDiv.classList.add("juegostodo")
+
+    juegoDiv.innerHTML = `
+        <div class="imagenes1">
+            <img src="${fav.thumbnail}" alt="${fav.title}">
+        </div>
+        <div class="juego1">
+            <h4 class="titulo">${fav.title}</h4>
         </div>
     `
-    contenedor.innerHTML += juegoHTML
+    juegoDiv.addEventListener("click", () => {
+        const juegoCompleto = {
+            title: fav.title,
+            titulo_web: fav.titulo_web || fav.title,
+            thumbnail: fav.thumbnail,
+            short_description: fav.short_description || fav.descripcion,
+            link: fav.link || fav.game_url,
+            developer: fav.developer || "Desconocido",
+            platform: fav.platform || "Desconocido",
+            genre: fav.genre || "Desconocido",
+            release_date: fav.release_date || "Desconocida"
+        }
+
+        localStorage.setItem("juegoSeleccionado", JSON.stringify(juegoCompleto))
+        window.location.href = "product.html"
+    })
+
+    contenedor.appendChild(juegoDiv)
 })
 
 document.getElementById("logout-btn").addEventListener("click", () => {
-    localStorage.removeItem("usuarioLogueado"); // Borra el usuario actual
-    window.location.href = "Login.html";        // Redirige al login
-});
+    localStorage.removeItem("usuarioLogueado")
+    window.location.href = "Login.html"
+})
