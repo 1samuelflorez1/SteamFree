@@ -577,6 +577,19 @@ a {
     
 }
 
+.cards {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 
+    0 10px 20px rgba(255, 255, 255, 0.2),
+    0 0 30px rgba(255, 122, 0, 0.4),
+    inset 0 0 50px rgba(255, 255, 255, 0.1);
+}
+
+
 .img-card img{
     display: flex;
     position: relative;
