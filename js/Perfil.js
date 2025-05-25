@@ -30,3 +30,8 @@ usuario.favoritos.forEach(fav => {
     `
     contenedor.innerHTML += juegoHTML
 })
+
+document.getElementById("logout-btn").addEventListener("click", () => {
+    localStorage.removeItem("usuarioLogueado"); // Borra el usuario actual
+    window.location.href = "Login.html";        // Redirige al login
+});
