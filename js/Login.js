@@ -38,36 +38,49 @@ const usuarios = [
 ];
 
 function enviarLogin() {
-    const email = document.getElementById("Email").value.trim();
-    const password = document.getElementById("password").value.trim();
+    const email = document.getElementById("Email").value
+    const password = document.getElementById("password").value
 
     if (!email || !password) {
-        alert("Por favor, completa ambos campos.");
+        alert("Por favor, completa ambos campos.")
         return;
     }
 
-    const usuario = usuarios.find(user => user.email === email && user.password === password);
+    const usuario = usuarios.find(user => user.email === email && user.password === password)
 
     if (usuario) {
-        window.location.href = "Main.html";
+        window.location.href = "Main.html"
     } else {
-        alert("Email o contraseña incorrectos.");
+        alert("Email o contraseña incorrectos.")
     }
 }
 
-// event listener del botón Sign In
+
 document.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
         const email = document.getElementById("Email").value
         const password = document.getElementById("password").value
 
         if (email && password) {
-            e.preventDefault();
-            enviarLogin();
+            e.preventDefault()
+            enviarLogin()
         }
     }
 });
 
 document.getElementById("boton-final").addEventListener("click", function () {
-    enviarLogin();
+    enviarLogin()
 });
+
+
+const passwordInput = document.getElementById("password")
+const togglePassword = document.getElementById("toggle-password")
+
+togglePassword.addEventListener("click", () => {
+    const isHidden = passwordInput.type === "password"
+    passwordInput.type = isHidden ? "text" : "password"
+
+  
+    togglePassword.classList.toggle("bx-show-alt")
+    togglePassword.classList.toggle("bx-hide")  
+})
