@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ) {
             alert("Bien hecho, tu mensaje fue enviado")
 
-           
+
             nameInput.value = ""
             emailInput.value = ""
             messageInput.value = ""
