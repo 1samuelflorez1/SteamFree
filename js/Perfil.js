@@ -30,4 +30,3 @@ usuario.favoritos.forEach(fav => {
     `
     contenedor.innerHTML += juegoHTML
 })
-
