@@ -49,8 +49,8 @@ function enviarLogin() {
     const usuario = usuarios.find(user => user.email === email && user.password === password)
 
     if (usuario) {
-    localStorage.setItem("usuarioLogueado", JSON.stringify(usuario)); // 👈 Guarda al usuario
-    window.location.href = "Main.html";
+    localStorage.setItem("usuarioLogueado", JSON.stringify(usuario))
+    window.location.href = "Main.html"
     } else {
         alert("Email o contraseña incorrectos.")
     }
