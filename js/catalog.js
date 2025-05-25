@@ -340,3 +340,20 @@ searchInput.addEventListener("input", () => {
     });
   }
 });
+
+//Newsletter---------------------------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    const boton = document.getElementById("botonNews")
+    const emailInput = document.getElementById("emailNews")
+
+    boton.addEventListener("click", function () {
+        const email = emailInput.value
+
+        if (email !== "") {
+            alert("Bien hecho te suscribiste")
+            emailInput.value = "" // Esto borra el contenido del input
+        } else {
+            alert("Por favor escribe tu correo")
+        }
+    })
+})
