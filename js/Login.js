@@ -37,16 +37,37 @@ const usuarios = [
     }
 ];
 
-document.getElementById("boton-final").addEventListener("click", function () {
-    const emailInput = document.getElementById("Email").value.trim()
-    const passwordInput = document.querySelector("input[type='password']").value.trim()
+function enviarLogin() {
+    const email = document.getElementById("Email").value.trim();
+    const password = document.getElementById("password").value.trim();
 
-    const usuario = usuarios.find(user => user.email === emailInput && user.password === passwordInput)
+    if (!email || !password) {
+        alert("Por favor, completa ambos campos.");
+        return;
+    }
+
+    const usuario = usuarios.find(user => user.email === email && user.password === password);
 
     if (usuario) {
-        localStorage.setItem("usuarioLogueado", JSON.stringify(usuario))
-        window.location.href = "Main.html"
+        window.location.href = "Main.html";
     } else {
-        alert("Email o contraseña incorrectos.")
+        alert("Email o contraseña incorrectos.");
     }
-})
+}
+
+// event listener del botón Sign In
+document.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        const email = document.getElementById("Email").value
+        const password = document.getElementById("password").value
+
+        if (email && password) {
+            e.preventDefault();
+            enviarLogin();
+        }
+    }
+});
+
+document.getElementById("boton-final").addEventListener("click", function () {
+    enviarLogin();
+});

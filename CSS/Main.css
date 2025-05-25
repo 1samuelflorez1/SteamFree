@@ -168,8 +168,23 @@ header a:hover{
     max-width: 750px; 
 }
 
+.game-cards2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 750px; 
+}
+
 
 .game-container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.game-container2{
     display: flex;
     gap: 20px;
     flex-direction: column;

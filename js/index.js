@@ -89,3 +89,36 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("Contenedor 'about-section' no encontrado.")
   }
 })
+
+
+//------------------------------------------------------------------------------- contact us
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form form");
+    const nameInput = form.querySelector("input[name='name']");
+    const emailInput = form.querySelector("input[name='email']");
+    const messageInput = form.querySelector("textarea[name='message']");
+    const submitButton = form.querySelector(".boton3");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita que recargue la página
+
+        if (
+            nameInput.value.trim() !== "" &&
+            emailInput.value.trim() !== "" &&
+            messageInput.value.trim() !== ""
+        ) {
+            alert("Bien hecho, tu mensaje fue enviado");
+
+            // Limpiar los campos
+            nameInput.value = "";
+            emailInput.value = "";
+            messageInput.value = "";
+
+            // Cambiar el texto del botón
+            submitButton.textContent = "¡Enviado!";
+        } else {
+            alert("Por favor completa todos los campos");
+        }
+    });
+});
