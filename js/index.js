@@ -1,5 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const teamMembers = [
+document.addEventListener("DOMContentLoaded", function () {
+  const aboutcards = document.getElementById("aboutcards")
+
+  const members = [
     {
       name: "Laura",
       role: "Developer",
@@ -24,101 +26,59 @@ document.addEventListener("DOMContentLoaded", () => {
       imageClass: "imagen3",
       roleClass: "puesto3"
     }
-  ]
+  ];
 
-  const aboutContainer = document.createElement("div")
-  aboutContainer.className = "aboutcards"
-
-  teamMembers.forEach(member => {
+  members.forEach(member => {
     const container = document.createElement("div")
     container.className = "game-container"
-
-    const nameEl = document.createElement("h1")
-    nameEl.className = "nombre"
-    nameEl.textContent = member.name
-
-    const card = document.createElement("div")
-    card.className = "cards"
-
-    const imgCard = document.createElement("div")
-    imgCard.className = "img-card"
-
-    const img = document.createElement("img")
-    img.className = member.imageClass
-    img.src = member.image
-    img.alt = member.name
-    imgCard.appendChild(img)
-
-    const textCard = document.createElement("div")
-    textCard.className = "text-card"
-
-    const nameIcon = document.createElement("div")
-    nameIcon.className = "name-icon"
-
-    const role = document.createElement("h3")
-    role.className = member.roleClass
-    role.textContent = member.role
-
-    const description = document.createElement("p")
-    description.textContent = member.description
-
-    nameIcon.appendChild(role)
-    textCard.appendChild(nameIcon)
-    textCard.appendChild(description)
-
-    card.appendChild(imgCard)
-    card.appendChild(textCard)
-
-    container.appendChild(nameEl)
-    container.appendChild(card)
-
-    aboutContainer.appendChild(container)
-  });
-
-  // Texto de la misión
-  const mission = document.createElement("p")
-  mission.className = "ourmission"
-  mission.textContent = "Our mission is to provide a secure, fun, and competitive environment where players can explore trending games, track rankings, and stay updated on the latest gaming news."
-
-  // Insertar en el DOM
-  const target = document.getElementById("about-section")
-  if (target) {
-    target.appendChild(aboutContainer)
-    target.appendChild(mission)
-  } else {
-    console.error("Contenedor 'about-section' no encontrado.")
-  }
+    container.innerHTML = `
+      <h1 class="nombre">${member.name}</h1>
+      <div class="cards">
+        <div class="img-card">
+          <img class="${member.imageClass}" src="${member.image}" alt="${member.name}">
+        </div>
+        <div class="text-card">
+          <div class="name-icon">
+            <h3 class="${member.roleClass}">${member.role}</h3>
+          </div>
+          <p>${member.description}</p>
+        </div>
+      </div>
+    `
+    aboutcards.appendChild(container)
+  })
 })
+
 
 
 //------------------------------------------------------------------------------- contact us
 
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".contact-form form");
-    const nameInput = form.querySelector("input[name='name']");
-    const emailInput = form.querySelector("input[name='email']");
-    const messageInput = form.querySelector("textarea[name='message']");
-    const submitButton = form.querySelector(".boton3");
+    const form = document.querySelector(".contact-form form")
+    const nameInput = form.querySelector("input[name='name']")
+    const emailInput = form.querySelector("input[name='email']")
+    const messageInput = form.querySelector("textarea[name='message']")
+    const submitButton = form.querySelector(".boton3")
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita que recargue la página
+        event.preventDefault()
 
         if (
             nameInput.value.trim() !== "" &&
             emailInput.value.trim() !== "" &&
             messageInput.value.trim() !== ""
         ) {
-            alert("Bien hecho, tu mensaje fue enviado");
+            alert("Bien hecho, tu mensaje fue enviado")
 
-            // Limpiar los campos
-            nameInput.value = "";
-            emailInput.value = "";
-            messageInput.value = "";
+           
+            nameInput.value = ""
+            emailInput.value = ""
+            messageInput.value = ""
 
-            // Cambiar el texto del botón
-            submitButton.textContent = "¡Enviado!";
+            
+            submitButton.textContent = "¡Enviado!"
         } else {
-            alert("Por favor completa todos los campos");
+            alert("Por favor completa todos los campos")
         }
     });
 });
