@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const playButton = document.querySelector(".play-btn")
 if (playButton && juego.link && juego.link !== "#") {
   playButton.addEventListener("click", () => {
-    window.open(juego.link, "_blank"); // Abre el juego en una nueva pestaña
+    window.open(juego.link, "_blank")
   })
 }
 

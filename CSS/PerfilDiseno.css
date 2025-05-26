@@ -108,7 +108,9 @@ header a:hover{
     align-items: center;
 }
 
-
+.juegostodo {
+    cursor: pointer;
+}
 /*Apartado atributos personales*/
 
 .informacion{
