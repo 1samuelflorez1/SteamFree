@@ -236,7 +236,7 @@ const usuarios = [
 ];
  
 
-//Funcion log---------------------------------------------------------------------------------------------------
+//Funcion login---------------------------------------------------------------------------------------------------
 function enviarLogin() {
     const email = document.getElementById("Email").value
     const password = document.getElementById("password").value
