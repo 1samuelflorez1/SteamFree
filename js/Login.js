@@ -275,7 +275,7 @@ togglePassword.addEventListener("click", () => {
     const isHidden = passwordInput.type === "password"
     passwordInput.type = isHidden ? "text" : "password"
 
-  
+
     togglePassword.classList.toggle("bx-show-alt")
     togglePassword.classList.toggle("bx-hide")  
 })

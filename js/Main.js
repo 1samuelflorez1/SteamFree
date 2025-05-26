@@ -123,7 +123,7 @@ const juegos2 = [
     enlace: "product.html",
     link: "https://blog.counter-strike.net/"
   },
-   {
+  {
     id: 21,
     titulo_web: "Destiny 2",
     title: "Destiny 2",
