@@ -1,3 +1,4 @@
+//Catalogo de juegos extras en el main ---------------------------------------------------------------------------------------------------
 const juegos = [
   {
     id: 57,
@@ -123,7 +124,7 @@ const juegos2 = [
     enlace: "product.html",
     link: "https://blog.counter-strike.net/"
   },
-   {
+  {
     id: 21,
     titulo_web: "Destiny 2",
     title: "Destiny 2",
@@ -159,7 +160,7 @@ const juegos2 = [
   },
 ]
 
-//----------------------------------------------------------------------------------------cards parte superior
+//Juegos parte superior------------------------------------------------------------------------------------------
 
 const contenedor = document.querySelector(".game-cards")
 
@@ -189,7 +190,7 @@ juegos.forEach((juego, index) => {
   contenedor.appendChild(gameContainer)
 });
 
-//info boton
+//Info boton---------------------------------------------------------------------------------------------------
 
 contenedor.addEventListener("click", function(e) {
   if (e.target.classList.contains("button-card")) {
@@ -200,7 +201,7 @@ contenedor.addEventListener("click", function(e) {
   }
 })
 
-//---------------------------------------------------------------------------------cards parte inferior
+//Juegos parte inferior-----------------------------------------------------------------------------------------
 
 const contenedor2 = document.querySelector(".game-cards2")
 
@@ -228,7 +229,7 @@ juegos2.forEach((juego, index) => {
   `
 
   contenedor2.appendChild(gameContainer2)
-});
+})
 
 //info boton
 
@@ -264,5 +265,5 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.key === "Enter") {
             suscribirse();
         }
-    });
-});
+    })
+})

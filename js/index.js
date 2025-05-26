@@ -1,3 +1,4 @@
+//Arreglo de quienes somos integrantes---------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
   const aboutcards = document.getElementById("aboutcards")
 
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//------------------------------------------------------------------------------- contact us
+//Contact us alerta (simulación)-----------------------------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".contact-form form")
@@ -80,5 +81,5 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             alert("Por favor completa todos los campos")
         }
-    });
-});
+    })
+})

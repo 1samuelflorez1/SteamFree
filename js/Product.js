@@ -1,4 +1,4 @@
-// product.js
+//Detalle juego---------------------------------------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
   const juego = JSON.parse(localStorage.getItem("juegoSeleccionado"))
@@ -8,22 +8,28 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+//Pestaña de la web---------------------------------------------------------------------------------------------------
   document.title = juego.nombre
-
+  
+//Nombre del juego---------------------------------------------------------------------------------------------------
   const title = document.querySelector(".game-info h1")
   if (title) title.textContent = juego.title
 
+//Nombre del juego---------------------------------------------------------------------------------------------------
   const thumbnail = document.querySelector(".thumbnail img")
   if (thumbnail) {
     thumbnail.src = juego.thumbnail
     thumbnail.alt = juego.title
   }
+//Descripcion del juego---------------------------------------------------------------------------------------------------
   const short_description = document.querySelector(".thumbnail .short_description")
   if (short_description) short_description.textContent = juego.short_description
 
+//Nombre del juego---------------------------------------------------------------------------------------------------
   const titulo_web = document.querySelector(".titulo_web")
   if (titulo_web) titulo_web.textContent = juego.titulo_web
 
+ //Link del boton---------------------------------------------------------------------------------------------------
 const playButton = document.querySelector(".play-btn")
 if (playButton && juego.link && juego.link !== "#") {
   playButton.addEventListener("click", () => {
@@ -31,6 +37,7 @@ if (playButton && juego.link && juego.link !== "#") {
   })
 }
 
+//Detalles del juego abajo de los botones---------------------------------------------------------------------------------------------------
 const detailsContainer = document.querySelector(".details")
 if (detailsContainer) {
   detailsContainer.innerHTML = 

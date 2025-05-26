@@ -1,3 +1,4 @@
+//Arreglo de 3 usuarios junto sus favoritos---------------------------------------------------------------------------------------------------
 const usuarios = [
     {
         nombre: "Charlotte",
@@ -6,6 +7,7 @@ const usuarios = [
         password: "SecretoMisteriosoOcultar",
         favoritos: [
             {
+            //Favoritos del usuario
             id: 57,
             titulo_web: "Fortnite",
             title: "Fortnite",
@@ -83,6 +85,7 @@ const usuarios = [
         password: "juan123",
         favoritos: [
             {
+            //Favoritos del usuario
             id: 452,
             titulo_web: "Call Of Duty: Warzone",
             title: "Call Of Duty: Warzone",
@@ -159,6 +162,7 @@ const usuarios = [
         password: "ana456",
         favoritos: [
             {
+            //Favoritos del usuario
             id: 523,
             titulo_web: "Fall Guys",
             title: "Fall Guys",
@@ -230,7 +234,9 @@ const usuarios = [
         ]
     }
 ];
+ 
 
+//Funcion log---------------------------------------------------------------------------------------------------
 function enviarLogin() {
     const email = document.getElementById("Email").value
     const password = document.getElementById("password").value
@@ -251,6 +257,7 @@ function enviarLogin() {
 }
 
 
+//Para que funcione el enter---------------------------------------------------------------------------------------------------
 document.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
         const email = document.getElementById("Email").value
@@ -263,10 +270,11 @@ document.addEventListener("keypress", function (e) {
     }
 });
 
+
+//funcionamiento del ojito---------------------------------------------------------------------------------------------------
 document.getElementById("boton-final").addEventListener("click", function () {
     enviarLogin()
-});
-
+})
 
 const passwordInput = document.getElementById("password")
 const togglePassword = document.getElementById("toggle-password")
@@ -275,7 +283,6 @@ togglePassword.addEventListener("click", () => {
     const isHidden = passwordInput.type === "password"
     passwordInput.type = isHidden ? "text" : "password"
 
-  
     togglePassword.classList.toggle("bx-show-alt")
     togglePassword.classList.toggle("bx-hide")  
 })

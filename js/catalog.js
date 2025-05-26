@@ -1,3 +1,4 @@
+//Catalogo de 15 juegos---------------------------------------------------------------------------------------------------
 const juegos = [
   {
     id: 540,
@@ -258,7 +259,7 @@ const juegos = [
   }
 ]
 
-//cards
+//Diseño de las cards predeterminado---------------------------------------------------------------------------------------------------
 
 const contenedor = document.querySelector(".game-cards")
 
@@ -288,7 +289,7 @@ juegos.forEach((juego, index) => {
   contenedor.appendChild(gameContainer)
 });
 
-//info boton
+//Boton de info que redirige a el detalle del juego---------------------------------------------------------------------------------------------------
 
 contenedor.addEventListener("click", function(e) {
   if (e.target.classList.contains("button-card")) {
@@ -299,7 +300,7 @@ contenedor.addEventListener("click", function(e) {
   }
 })
 
-//Barra de busqueda
+//barra de busqueda funcional---------------------------------------------------------------------------------------------------
 const searchInput = document.getElementById("search-input")
 
 searchInput.addEventListener("input", () => {
@@ -337,11 +338,11 @@ searchInput.addEventListener("input", () => {
       `;
 
       contenedor.appendChild(gameContainer)
-    });
+    })
   }
-});
+})
 
-//Newsletter---------------------------------------------------------------------------------------------------
+//Newsletter alerta (simulacion)---------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const boton = document.getElementById("botonNews")
     const emailInput = document.getElementById("emailNews")
@@ -363,5 +364,5 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.key === "Enter") {
             suscribirse()
         }
-    });
-});
+    })
+})

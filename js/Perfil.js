@@ -1,8 +1,10 @@
+//Perfil de usuario---------------------------------------------------------------------------------------------------
 const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"))
 
 if (!usuario) {
     window.location.href = "Login.html"
 }
+
 
 const info = document.querySelectorAll(".infomas .inicio")
 if (info.length >= 4) {
@@ -15,7 +17,7 @@ if (info.length >= 4) {
 const contenedor = document.querySelector(".images")
 contenedor.innerHTML = ""
 
-
+//Favoritos usuario---------------------------------------------------------------------------------------------------
 usuario.favoritos.forEach(fav => {
     const juegoDiv = document.createElement("div")
     juegoDiv.classList.add("juegostodo")
@@ -48,6 +50,7 @@ usuario.favoritos.forEach(fav => {
     contenedor.appendChild(juegoDiv)
 })
 
+//Log out---------------------------------------------------------------------------------------------------
 document.getElementById("logout-btn").addEventListener("click", () => {
     localStorage.removeItem("usuarioLogueado")
     window.location.href = "Login.html"
