@@ -231,7 +231,7 @@ juegos2.forEach((juego, index) => {
   contenedor2.appendChild(gameContainer2)
 })
 
-//info boton
+//info boton-----------------------------------------------------------------------------------------------------------------------
 
 contenedor2.addEventListener("click", function(e) {
   if (e.target.classList.contains("button-card")) {
@@ -243,7 +243,7 @@ contenedor2.addEventListener("click", function(e) {
 })
 
 
-//Newsletter---------------------------------------------------------------------------------------------------
+//Newsletter alerta (simulacion)---------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const boton = document.getElementById("botonNews")
     const emailInput = document.getElementById("emailNews")
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    boton.addEventListener("click", suscribirse);
+    boton.addEventListener("click", suscribirse)
 
     emailInput.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
