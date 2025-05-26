@@ -245,17 +245,17 @@ contenedor2.addEventListener("click", function(e) {
 
 //Newsletter---------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-    const boton = document.getElementById("botonNews");
-    const emailInput = document.getElementById("emailNews");
+    const boton = document.getElementById("botonNews")
+    const emailInput = document.getElementById("emailNews")
 
     function suscribirse() {
-        const email = emailInput.value;
+        const email = emailInput.value
 
         if (email !== "") {
-            alert("Felicidades!! te suscribiste :D");
-            emailInput.value = ""; // Esto borra el contenido del input
+            alert("Felicidades!! te suscribiste :D")
+            emailInput.value = ""
         } else {
-            alert("Por favor escribe tu correo");
+            alert("Por favor escribe tu correo")
         }
     }
 
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     emailInput.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
-            suscribirse();
+            suscribirse()
         }
     })
 })

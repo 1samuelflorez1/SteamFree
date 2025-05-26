@@ -70,14 +70,9 @@ document.addEventListener("DOMContentLoaded", function () {
             messageInput.value.trim() !== ""
         ) {
             alert("Bien hecho, tu mensaje fue enviado")
-
-
             nameInput.value = ""
             emailInput.value = ""
             messageInput.value = ""
-
-            
-            submitButton.textContent = "¡Enviado!"
         } else {
             alert("Por favor completa todos los campos")
         }

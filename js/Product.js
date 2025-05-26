@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const title = document.querySelector(".game-info h1")
   if (title) title.textContent = juego.title
 
-//Nombre del juego---------------------------------------------------------------------------------------------------
+//Imagen del juego---------------------------------------------------------------------------------------------------
   const thumbnail = document.querySelector(".thumbnail img")
   if (thumbnail) {
     thumbnail.src = juego.thumbnail
