@@ -193,8 +193,8 @@ header a:hover{
 
 .cards{
     margin-top: 70px;
-    width: 195px;
-    height: 290px;
+    width: 180px;
+    height: 260px;
     backdrop-filter: blur(0.8);
     -webkit-backdrop-filter: blur(0.8);
     border-radius: 25px;
@@ -275,7 +275,7 @@ header a:hover{
 
 
 .button-card{
-    margin-bottom: -10px;
+    margin-bottom: 0px;
     margin-top: 10px;
     width: 100px;
     height: 30px;
