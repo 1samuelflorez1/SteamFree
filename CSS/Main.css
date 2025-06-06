@@ -194,7 +194,7 @@ header a:hover{
 .cards{
     margin-top: 70px;
     width: 195px;
-    height: 260px;
+    height: 290px;
     backdrop-filter: blur(0.8);
     -webkit-backdrop-filter: blur(0.8);
     border-radius: 25px;
@@ -253,7 +253,7 @@ header a:hover{
 
 .text-card h3{
     margin-top: 0;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: -2px;
     padding: 0;
     font-weight: 400;
