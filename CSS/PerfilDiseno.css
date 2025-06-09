@@ -203,6 +203,56 @@ header a:hover{
 
 
 /*Botones inferiores de cambio de datos y cerrra sesion*/
+.quitar-fav{
+    margin-top: 8px;
+    width: 150px;
+    height: 40px;
+    background-color: #fd5105;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 115, 0, 1);
+    cursor: pointer;
+}
+
+.titulofav{
+    color: white;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.juegosfav{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagenes1{
+    margin-right: 70px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: flex-start;
+}
+
+.juegostodo {
+  width: calc(33.333% - 1rem); /* Tres tarjetas por fila */
+  box-sizing: border-box;
+}
+
 
 .botones{
 

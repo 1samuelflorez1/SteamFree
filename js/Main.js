@@ -1,72 +1,99 @@
 const galeria = document.querySelector(".game-cards")
+const searchInput = document.getElementById("searchInput")
+const allCards = [] // Aquí guardaremos los elementos creados
 
-function createPost() {
-  for (let index = 1; index < 50; index++) {
-    fetch(`https://my-json-server.typicode.com/1samuelflorez1/Fake-Api-SteamFree/games/${index}`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Error al obtener juego con ID ${index}`)
+async function createPost() {
+  const cardsArray = []
+
+  for (let index = 1; index <= 6; index++) {
+    try {
+      const response = await fetch(`https://my-json-server.typicode.com/1samuelflorez1/Fake-Api-SteamFree/games/${index}`)
+      if (!response.ok) throw new Error(`Error al obtener juego con ID ${index}`)
+      const game = await response.json()
+
+      const card = document.createElement("div")
+      card.classList.add("cards")
+      card.setAttribute("data-title", game.title.toLowerCase())
+
+      const imgContainer = document.createElement("div")
+      imgContainer.classList.add("img-card")
+      const img = document.createElement("img")
+      img.src = game.thumbnail
+      img.alt = game.title
+      imgContainer.appendChild(img)
+      card.appendChild(imgContainer)
+
+      const nameIcon = document.createElement("div")
+      nameIcon.classList.add("name-icon")
+      const title = document.createElement("h3")
+      title.textContent = game.title
+      const icon = document.createElement("i")
+      icon.className = "bx bx-heart"
+      nameIcon.appendChild(title)
+      nameIcon.appendChild(icon)
+
+      icon.addEventListener("click", () => {
+        const usuarioLogueado = JSON.parse(localStorage.getItem("logueado"))
+        const usuarios = JSON.parse(localStorage.getItem("usuarios")) || []
+        const indexUsuario = usuarios.findIndex(u => u.email === usuarioLogueado?.email)
+
+        if (indexUsuario === -1) return
+
+        const favoritos = usuarios[indexUsuario].favoritos || []
+        const yaFavorito = favoritos.some(fav => fav.id === game.id)
+        if (yaFavorito) {
+          alert("Este juego ya está en favoritos")
+          return
         }
-        return response.json()
+
+        favoritos.push({
+          id: game.id,
+          title: game.title,
+          thumbnail: game.thumbnail,
+          short_description: game.short_description,
+          link: game.link,
+          game_url: game.game_url,
+          developer: game.developer,
+          platform: game.platform,
+          genre: game.genre,
+          release_date: game.release_date
+        })
+
+        icon.classList.add("bx-heart-filled")
+        usuarios[indexUsuario].favoritos = favoritos
+        localStorage.setItem("usuarios", JSON.stringify(usuarios))
+        alert("Juego guardado en favoritos")
       })
-      .then((game) => {
-        // Crear tarjeta
-        const card = document.createElement("div")
-        card.classList.add("cards")
 
-        // Imagen
-        const imgContainer = document.createElement("div")
-        imgContainer.classList.add("img-card")
+      const textCard = document.createElement("div")
+      textCard.classList.add("text-card")
+      const genre = document.createElement("p")
+      genre.textContent = game.genre
+      textCard.appendChild(nameIcon)
 
-        const img = document.createElement("img")
-        img.src = game.thumbnail;
-        img.alt = game.title;
-        imgContainer.appendChild(img);
-        card.appendChild(imgContainer);
+      card.appendChild(textCard)
 
-        // Título y corazón
-        const textCard = document.createElement("div")
-        textCard.classList.add("text-card")
-
-        const title = document.createElement("h3")
-        title.textContent = game.title
-
-        const heartIcon = document.createElement("i")
-        heartIcon.className = "bx bx-heart" // Icono de corazón vacío
-        heartIcon.style.fontSize = "24px"
-        heartIcon.style.cursor = "pointer"
-        heartIcon.style.marginLeft = "10px"
-
-        // Contenedor para título + corazón
-        const titleContainer = document.createElement("div")
-        titleContainer.style.display = "flex"
-        titleContainer.style.alignItems = "center"
-        titleContainer.style.justifyContent = "space-between"
-
-        titleContainer.appendChild(title)
-        titleContainer.appendChild(heartIcon)
-
-        textCard.appendChild(titleContainer)
-        card.appendChild(textCard)
-
-        // Botón "Info"
-        const button = document.createElement("button")
-        button.classList.add("button-card")
-        button.textContent = "Info"
-        button.onclick = () => {
+      const button = document.createElement("button")
+      button.classList.add("button-card")
+      button.textContent = "Info"
+      button.onclick = () => {
         localStorage.setItem("juegoSeleccionado", JSON.stringify(game))
         window.location.href = "product.html"
-        }
+      }
+      card.appendChild(button)
 
-        card.appendChild(button)
+      cardsArray.push(card)
+      allCards.push(card)
 
-        // Agregar la tarjeta a la galería
-        galeria.appendChild(card)
-      })
-      .catch((error) => {
-        console.warn(error.message)
-      });
+    } catch (error) {
+      console.error("Error al cargar los juegos:", error)
+    }
   }
+
+  // Renderizamos todo junto al final
+  galeria.append(...cardsArray)
 }
+
+
 
 createPost()

@@ -168,6 +168,17 @@ header a:hover{
     max-width: 750px; 
 }
 
+.name-icon{
+    display: flex;
+    margin-bottom: 2px;
+    i{
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+    
+    
+}
+
 .game-cards2{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 

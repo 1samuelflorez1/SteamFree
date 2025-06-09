@@ -37,60 +37,65 @@ if (botonLogout) {
 
 
 
-// //Perfil de usuario---------------------------------------------------------------------------------------------------
-// const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"))
+document.addEventListener('DOMContentLoaded', () => {
+  const usuarioLogueado = JSON.parse(localStorage.getItem('logueado'))
 
-// if (!usuario) {
-//     window.location.href = "Login.html"
-// }
+  if (!usuarioLogueado) {
+    alert('No hay sesión activa. Redirigiendo al login...')
+    window.location.href = 'Login.html'
+    return
+  }
 
+  // Obtener los usuarios actualizados y encontrar al usuario actual
+  let usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
+  const indexUsuario = usuarios.findIndex(u => u.email === usuarioLogueado.email)
+  if (indexUsuario === -1) return
 
-// const info = document.querySelectorAll(".infomas .inicio")
-// if (info.length >= 4) {
-//     info[0].textContent = usuario.nombre
-//     info[1].textContent = usuario.apellido
-//     info[2].textContent = usuario.email
-//     info[3].textContent = usuario.password
-// }
+  const usuario = usuarios[indexUsuario]
+  const contenedor = document.querySelector(".images")
+  contenedor.innerHTML = ""
 
-// const contenedor = document.querySelector(".images")
-// contenedor.innerHTML = ""
+  const favoritos = [...(usuario.favoritos || [])] // Copia segura
 
-// //Favoritos usuario---------------------------------------------------------------------------------------------------
-// usuario.favoritos.forEach(fav => {
-//     const juegoDiv = document.createElement("div")
-//     juegoDiv.classList.add("juegostodo")
+  favoritos.forEach((fav) => {
+    const juegoDiv = document.createElement("div")
+    juegoDiv.classList.add("juegostodo")
 
-//     juegoDiv.innerHTML = `
-//         <div class="imagenes1">
-//             <img src="${fav.thumbnail}" alt="${fav.title}">
-//         </div>
-//         <div class="juego1">
-//             <h4 class="titulo">${fav.title}</h4>
-//         </div>
-//     `
-//     juegoDiv.addEventListener("click", () => {
-//         const juegoCompleto = {
-//             title: fav.title,
-//             titulo_web: fav.titulo_web || fav.title,
-//             thumbnail: fav.thumbnail,
-//             short_description: fav.short_description || fav.descripcion,
-//             link: fav.link || fav.game_url,
-//             developer: fav.developer || "Desconocido",
-//             platform: fav.platform || "Desconocido",
-//             genre: fav.genre || "Desconocido",
-//             release_date: fav.release_date || "Desconocida"
-//         }
+    juegoDiv.innerHTML = `
+      <div class="juegosfav">
+        <div class="imagenes1">
+          <img src="${fav.thumbnail}" alt="${fav.title}">
+        </div>
+        <h4 class="titulofav">${fav.title}</h4>
+        <button class="quitar-fav">Quitar de favoritos</button>
+      </div>
+    `
 
-//         localStorage.setItem("juegoSeleccionado", JSON.stringify(juegoCompleto))
-//         window.location.href = "product.html"
-//     })
+    // Redirigir al producto al hacer clic en la imagen
+    juegoDiv.querySelector("img").addEventListener("click", () => {
+      localStorage.setItem("juegoSeleccionado", JSON.stringify(fav))
+      window.location.href = "product.html"
+    })
 
-//     contenedor.appendChild(juegoDiv)
-// })
+    // Botón para quitar de favoritos
+    juegoDiv.querySelector(".quitar-fav").addEventListener("click", (e) => {
+      e.stopPropagation()
 
-// //Log out---------------------------------------------------------------------------------------------------
-// document.getElementById("logout-btn").addEventListener("click", () => {
-//     localStorage.removeItem("usuarioLogueado")
-//     window.location.href = "Login.html"
-// })
+      // Volver a cargar los usuarios del localStorage por si hubo cambios
+      usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
+      const userIndex = usuarios.findIndex(u => u.email === usuarioLogueado.email)
+      if (userIndex === -1) return
+
+      // Filtrar el juego a eliminar
+      usuarios[userIndex].favoritos = usuarios[userIndex].favoritos.filter(j => j.id !== fav.id)
+
+      // Guardar en localStorage
+      localStorage.setItem('usuarios', JSON.stringify(usuarios))
+
+      // Quitar del DOM
+      juegoDiv.remove()
+    })
+
+    contenedor.appendChild(juegoDiv)
+  })
+})
