@@ -6,8 +6,6 @@
 
 
 
-
-
 // //Perfil de usuario---------------------------------------------------------------------------------------------------
 // const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"))
 
