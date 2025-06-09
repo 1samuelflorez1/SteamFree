@@ -55,26 +55,45 @@ document.addEventListener("DOMContentLoaded", function () {
 //Contact us alerta (simulación)-----------------------------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".contact-form form")
-    const nameInput = form.querySelector("input[name='name']")
-    const emailInput = form.querySelector("input[name='email']")
-    const messageInput = form.querySelector("textarea[name='message']")
-    const submitButton = form.querySelector(".boton3")
+  const form = document.querySelector(".contact-form form")
+  const nameInput = form.querySelector("input[name='name']")
+  const emailInput = form.querySelector("input[name='email']")
+  const messageInput = form.querySelector("textarea[name='message']")
+  const submitButton = form.querySelector(".boton3")
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault()
+  form.addEventListener("submit", function (event) {
+    event.preventDefault()
 
-        if (
-            nameInput.value.trim() !== "" &&
-            emailInput.value.trim() !== "" &&
-            messageInput.value.trim() !== ""
-        ) {
-            alert("Bien hecho, tu mensaje fue enviado")
-            nameInput.value = ""
-            emailInput.value = ""
-            messageInput.value = ""
-        } else {
-            alert("Por favor completa todos los campos")
-        }
-    })
+    const name = nameInput.value.trim()
+    const email = emailInput.value.trim()
+    const message = messageInput.value.trim()
+
+    if (name !== "" && email !== "" && message !== "") {
+      // Crear un objeto con la información del mensaje
+      const contactMessage = {
+        name,
+        email,
+        message,
+        date: new Date().toISOString()
+      }
+
+      // Obtener mensajes anteriores
+      const existingMessages = JSON.parse(localStorage.getItem("contactMessages")) || []
+
+      // Agregar el nuevo mensaje
+      existingMessages.push(contactMessage)
+
+      // Guardar en localStorage
+      localStorage.setItem("contactMessages", JSON.stringify(existingMessages))
+
+      alert("¡Bien hecho! Tu mensaje fue enviado correctamente.")
+
+      // Limpiar campos
+      nameInput.value = ""
+      emailInput.value = ""
+      messageInput.value = ""
+    } else {
+      alert("Por favor completa todos los campos antes de enviar.")
+    }
+  })
 })
