@@ -100,3 +100,36 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+document.getElementById("guardarCambios").addEventListener("click", () => {
+  const passwordInput = document.getElementById("password-input")
+  const nuevaPassword = passwordInput.value.trim()
+
+  const usuarioLogueado = JSON.parse(localStorage.getItem('logueado'))
+  let usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
+
+  const indexUsuario = usuarios.findIndex(u => u.email === usuarioLogueado.email)
+  if (indexUsuario === -1) return
+
+  if (nuevaPassword === "") {
+    alert("La contraseña no puede estar vacía.")
+    return
+  }
+
+  usuarios[indexUsuario].password = nuevaPassword
+
+  localStorage.setItem("usuarios", JSON.stringify(usuarios))
+  alert("Contraseña actualizada con éxito.")
+})
+
+// Mostrar/ocultar contraseña
+const togglePassword = document.getElementById("toggle-password")
+const passwordInput = document.getElementById("password-input")
+
+togglePassword.addEventListener("click", () => {
+  const isPasswordVisible = passwordInput.type === "text"
+  passwordInput.type = isPasswordVisible ? "password" : "text"
+  
+  // Cambiar ícono (opcional, para mayor claridad)
+  togglePassword.classList.toggle("bx-show-alt", isPasswordVisible)
+  togglePassword.classList.toggle("bx-hide", !isPasswordVisible)
+})
