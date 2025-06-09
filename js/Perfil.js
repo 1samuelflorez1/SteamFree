@@ -1,8 +1,39 @@
 
+document.addEventListener('DOMContentLoaded', () => {
+    const usuarioLogueado = JSON.parse(localStorage.getItem('logueado'))
 
+    if (!usuarioLogueado) {
+        alert('No hay sesión activa. Redirigiendo al login...')
+        window.location.href = 'Login.html'
+        return
+    }
 
+    // Selecciona los inputs en orden: nombre, apellido, email, password
+    const inputs = document.querySelectorAll('.input-editable')
 
+    // Cargamos los datos en los campos del perfil
+    if (inputs.length >= 4) {
+        const usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
+        const usuarioCompleto = usuarios.find(usuario => usuario.email === usuarioLogueado.email)
 
+        if (usuarioCompleto) {
+            inputs[0].value = usuarioCompleto.name
+            inputs[1].value = usuarioCompleto.lastName
+            inputs[2].value = usuarioCompleto.email
+            inputs[3].value = usuarioCompleto.password
+        }
+    }
+})
+
+const botonLogout = document.querySelector('.boton2') // Detecta el botón "Log Out"
+
+if (botonLogout) {
+    botonLogout.addEventListener('click', (e) => {
+        e.preventDefault()
+        localStorage.removeItem('logueado')
+        window.location.href = 'Login.html'
+    })
+}
 
 
 
