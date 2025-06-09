@@ -63,14 +63,14 @@
                             <ul class="infomas">
                                 <div class="linea">
                                     <li class="inicio">
-                                        <input type="text" value="Charlotte" class="input-editable" />
+                                        <input type="text" value="" class="input-editable" readonly/>
                                     </li>
                                     <p></p>
                                 </div>
 
                                 <div class="linea">
                                     <li class="inicio">
-                                        <input type="text" value="Winston" class="input-editable" />
+                                        <input type="text" value="" class="input-editable" readonly/>
                                     </li>
                                     <p></p>
                                 </div>
@@ -78,11 +78,11 @@
                                 <!-- EMAIL -->
                                 <div class="linea">
                                     <div class="ordenicono1">
-                                        <li class="inicio">
-                                            <input type="email" id="email-input" value="Ch4rlott3$@gmail.com"
-                                                class="input-editable" />
+                                        <li class="inicio" id="emailperfil">
+                                            <input type="email" id="email-input" value=""
+                                                class="input-editable" readonly/>
                                         </li>
-                                        <i class='bx bx-show-alt' id="toggle-email"></i>
+                                        
                                     </div>
                                     <p></p>
                                 </div>
@@ -91,7 +91,7 @@
                                 <div class="linea">
                                     <div class="ordenicono1">
                                         <li class="inicio">
-                                            <input type="password" id="password-input" value="SecretoMisteriosoOcultar"
+                                            <input type="password" id="password-input" value=""
                                                 class="input-editable" />
                                         </li>
                                         <i class='bx bx-show-alt' id="toggle-password"></i>
@@ -107,9 +107,7 @@
 
                     <!-----Botones inferiores de cambio de datos y cerrra sesion ---->
                     <div class="botones">
-                        <a href="">
-                            <h1 class="boton1">Safe Changes</h1>
-                        </a>
+                        <button class="boton1" id="guardarCambios">Save Changes</button>
                         <a href="Login.html">
                             <h1 class="boton2">Log Out</h1>
                         </a>
