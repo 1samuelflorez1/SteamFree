@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
  //Link del boton---------------------------------------------------------------------------------------------------
 const playButton = document.querySelector(".play-btn")
-if (playButton && juego.link && juego.link !== "#") {
+if (playButton && juego.game_url && juego.game_url !== "#") {
   playButton.addEventListener("click", () => {
-    window.open(juego.link, "_blank")
+    window.open(juego.game_url, "_blank")
   })
 }
 
