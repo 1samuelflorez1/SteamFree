@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//Contact us alerta (simulación)-----------------------------------------------------------------------------------------
+//Contact us que la info se guarda en el local -----------------------------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".contact-form form")
@@ -64,12 +64,16 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault()
 
+// tenemos los valores de los campos eliminando espacios que no se necesitan---------------------------------------------------------------------
+
     const name = nameInput.value.trim()
     const email = emailInput.value.trim()
     const message = messageInput.value.trim()
 
     if (name !== "" && email !== "" && message !== "") {
-      // Crear un objeto con la información del mensaje
+
+// Estos son los datos que iran en el mensaje-----------------------------------------------------------------------------------------------------
+
       const contactMessage = {
         name,
         email,
@@ -77,18 +81,21 @@ document.addEventListener("DOMContentLoaded", function () {
         date: new Date().toISOString()
       }
 
-      // Obtener mensajes anteriores
+      
       const existingMessages = JSON.parse(localStorage.getItem("contactMessages")) || []
 
-      // Agregar el nuevo mensaje
+//Se agrega el nuevo mensaje que el usuario vaya a añadir--------------------------------------------------------------------------------
+
       existingMessages.push(contactMessage)
 
-      // Guardar en localStorage
+//Se guarda el array actualizado en localStorage----------------------------------------------------------------------------------------------------------------
+
       localStorage.setItem("contactMessages", JSON.stringify(existingMessages))
 
       alert("¡Bien hecho! Tu mensaje fue enviado correctamente.")
 
-      // Limpiar campos
+// Luego de enviar el mensaje se limpian los campos del formulario para que quede vacio-------------------------------------------------------------------------
+   
       nameInput.value = ""
       emailInput.value = ""
       messageInput.value = ""
