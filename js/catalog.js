@@ -63,7 +63,7 @@ b // Imagen del juegoooo--------------------------------------------------------
   const yaFavorito = favoritos.some(fav => fav.id === game.id)
   if (!yaFavorito) {
 
- // Verificar si ya está en favoritos--------------------------------------------------------------------------------------------------------------------------------
+ // Si no esta entonces se agrega--------------------------------------------------------------------------------------------------------------------------------
 
     favoritos.push({
       
@@ -101,7 +101,9 @@ b // Imagen del juegoooo--------------------------------------------------------
         button.classList.add("button-card")
         button.textContent = "Info"
         button.onclick = () => {
-// SSSSse guarda el juego en localStorage y se redirige a otra página-------------------------------------------------------------------------------------------------------------
+
+//SSSSse guarda el juego en localStorage y se redirige a otra pagina al darle click-------------------------------------------------------------------------------------------------------------
+        
         localStorage.setItem("juegoSeleccionado", JSON.stringify(game))
         window.location.href = "product.html"
         }

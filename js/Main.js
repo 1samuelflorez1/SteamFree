@@ -1,9 +1,19 @@
 const galeria = document.querySelector(".game-cards")
 const searchInput = document.getElementById("searchInput")
-const allCards = [] // Aquí guardaremos los elementos creados
+
+// Aqui se guardan todas las cards-----------------------------------------------
+
+const allCards = [] 
+
+
+//Se crea la funcion que creara las tarjetas de los juegos--------------------------------------------------------------------------------------------------------------------------------
 
 async function createPost() {
+
   const cardsArray = []
+
+
+//Se recorren los primeros 6 juegos del fake API--------------------------------------------------------------------------------------------------------------------------------
 
   for (let index = 1; index <= 6; index++) {
     try {
@@ -11,9 +21,13 @@ async function createPost() {
       if (!response.ok) throw new Error(`Error al obtener juego con ID ${index}`)
       const game = await response.json()
 
+//Se crea la card principal aplicandole los estilos ya creados--------------------------------------------------------------------------------------------------------------------------------
+  
       const card = document.createElement("div")
       card.classList.add("cards")
-      card.setAttribute("data-title", game.title.toLowerCase())
+      card.setAttribute("data-title", game.title.toLowerCase()) //guarda el titulo para la busquedad (se puede escribir en mayusculas o minusculas------------------------------------------------
+
+// Se crea el div de la imagen del juego  aplicandole los estilos ya creados--------------------------------------------------------------------------------------------------------------------------------
 
       const imgContainer = document.createElement("div")
       imgContainer.classList.add("img-card")
@@ -22,6 +36,8 @@ async function createPost() {
       img.alt = game.title
       imgContainer.appendChild(img)
       card.appendChild(imgContainer)
+
+//Se crea el div del titulo del juego y el icono fav--------------------------------------------------------------------------------------------------------------------------------  
 
       const nameIcon = document.createElement("div")
       nameIcon.classList.add("name-icon")
@@ -32,6 +48,8 @@ async function createPost() {
       nameIcon.appendChild(title)
       nameIcon.appendChild(icon)
 
+// Se crea un evento al hacer clic en el ícono para guardar el juego como favorito---------------------------------------------------------------------------------
+
       icon.addEventListener("click", () => {
         const usuarioLogueado = JSON.parse(localStorage.getItem("logueado"))
         const usuarios = JSON.parse(localStorage.getItem("usuarios")) || []
@@ -40,13 +58,21 @@ async function createPost() {
         if (indexUsuario === -1) return
 
         const favoritos = usuarios[indexUsuario].favoritos || []
+
+// Verificamos si ya está agregado--------------------------------------------------------------------------------------------------------------------------------
+
         const yaFavorito = favoritos.some(fav => fav.id === game.id)
         if (yaFavorito) {
           alert("Este juego ya está en favoritos")
           return
         }
 
+// Si no esta entonces se agrega--------------------------------------------------------------------------------------------------------------------------------
+
         favoritos.push({
+
+ // Detalles de la info del juego--------------------------------------------------------------------------------------------------------------------------------
+
           id: game.id,
           title: game.title,
           thumbnail: game.thumbnail,
@@ -65,6 +91,8 @@ async function createPost() {
         alert("Juego guardado en favoritos")
       })
 
+//Se crea div de texto de la tarjeta--------------------------------------------------------------------------------------------------------------------------------
+
       const textCard = document.createElement("div")
       textCard.classList.add("text-card")
       const genre = document.createElement("p")
@@ -73,10 +101,15 @@ async function createPost() {
 
       card.appendChild(textCard)
 
+//Boton para ver la info del juego seleccionado --------------------------------------------------------------------------------------------------------------------------------
+
       const button = document.createElement("button")
       button.classList.add("button-card")
       button.textContent = "Info"
       button.onclick = () => {
+
+//SSSSse guarda el juego en localStorage y se redirige a otra pagina al darle click-------------------------------------------------------------------------------------------------------------
+
         localStorage.setItem("juegoSeleccionado", JSON.stringify(game))
         window.location.href = "product.html"
       }
@@ -90,7 +123,7 @@ async function createPost() {
     }
   }
 
-  // Renderizamos todo junto al final
+//Se agregan todas  las card al DOM de una sola vez--------------------------------------------------------------------------------------------------------------------------------
   galeria.append(...cardsArray)
 }
 
