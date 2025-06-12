@@ -49,15 +49,30 @@ if (detailsContainer) {
 }
 })
 
+//Boton añadir favvvv desde el detalle del juegoooooooo-------------------------------------------------------------------------------------------------------
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const favButton = document.querySelector(".fav-btn")
 
+
+// Si no se encuentra el botón en la página, salimos-------------------------------------------------------------------------------------------------------
+
+
   if (!favButton) return
 
+
+// Esto es cuando el usuario hace clic en el boton de añadir fav----------------------------------------------------------------------------------------------------- 
+
   favButton.addEventListener("click", () => {
+
+//Se obtiene el el juego actualmente seleccionado que previamente fue guardado en el local-----------------------------------------------------------------------------------------------------
+
     const juego = JSON.parse(localStorage.getItem("juegoSeleccionado"))
     if (!juego) return
+
+// se obtiene la info del usuario que ha iniciado sesión-----------------------------------------------------------------------------------------------------
 
     const usuarioLogueado = JSON.parse(localStorage.getItem("logueado"))
     if (!usuarioLogueado) {
@@ -66,29 +81,33 @@ document.addEventListener("DOMContentLoaded", () => {
       return
     }
 
-    // Obtener todos los usuarios del localStorage
+// Obtener todos los usuarios del local-----------------------------------------------------------------------------------------------------
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || []
     const indexUsuario = usuarios.findIndex(u => u.email === usuarioLogueado.email)
     if (indexUsuario === -1) return
 
     const usuario = usuarios[indexUsuario]
 
-    // Verificar si ya está en favoritos
+// Verificar si ya está en favvv del usuario----------------------------------------------------------------------------------------------------- 
+
     const yaExiste = (usuario.favoritos || []).some(f => f.id === juego.id)
     if (yaExiste) {
       alert("Este juego ya está en tus favoritos.")
       return
     }
 
-    // Si no tiene favoritos aún, inicializamos el array
+// Si no tiene favvv aun se incia el array----------------------------------------------------------------------------------------------------- 
+
     if (!usuario.favoritos) {
       usuario.favoritos = []
     }
 
-    // Agregar el juego
+//Se añade el juego a la lista de favs del usuario----------------------------------------------------------------------------------------------------- 
+
     usuario.favoritos.push(juego)
 
-    // Guardar cambios
+//se guardan los cambios actualizados en el local----------------------------------------------------------------------------------------------------- 
+
     usuarios[indexUsuario] = usuario
     localStorage.setItem("usuarios", JSON.stringify(usuarios))
 
