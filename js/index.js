@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nameInput = form.querySelector("input[name='name']")
   const emailInput = form.querySelector("input[name='email']")
   const messageInput = form.querySelector("textarea[name='message']")
-  const submitButton = form.querySelector(".boton3")
+  
 
   form.addEventListener("submit", function (event) {
     event.preventDefault()
