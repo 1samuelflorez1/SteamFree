@@ -15,7 +15,7 @@ function createPost() {
         return response.json()
       })
 
- // Verificar si ya está en favoritos--------------------------------------------------------------------------------------------------------------------------------  
+ // Extrae un elemento del api para realizar la card--------------------------------------------------------------------------------------------------------------------------------  
 
       .then((game) => {
         const card = document.createElement("div")

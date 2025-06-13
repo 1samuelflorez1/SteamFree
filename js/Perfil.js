@@ -97,8 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Se crea un boton para quitar los favs , al hacer click en este se eliminara------------------------------------------------------------------------------------------------------- 
 
-    juegoDiv.querySelector(".quitar-fav").addEventListener("click", (e) => {
-      e.stopPropagation()
+    juegoDiv.querySelector(".quitar-fav").addEventListener("click", () => {
+      
 
 //Se actualiza la lista del usuario en local quitando el juego-------------------------------------------------------------------------------------------------------
 
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (userIndex === -1) return
 
 
-      usuarios[userIndex].favoritos = usuarios[userIndex].favoritos.filter(j => j.id !== fav.id)
+      usuarios[userIndex].favoritos = usuarios[userIndex].favoritos.filter(juego => juego.id !== fav.id)
 
 
       localStorage.setItem('usuarios', JSON.stringify(usuarios))
@@ -164,17 +164,16 @@ document.getElementById("guardarCambios").addEventListener("click", () => {
 const togglePassword = document.getElementById("toggle-password")
 const passwordInput = document.getElementById("password-input")
 
-
-//Se añade un evento al hacer clic en el icono de mostrar o ocultar la contraseña-------------------------------------------------------------------------------------------------------
+let isPasswordVisible = false
 
 togglePassword.addEventListener("click", () => {
+  isPasswordVisible = !isPasswordVisible  // Cambia el estado
 
-
-  // Se verficia si el tipo del input es text osea si la contra ya esta visible------------------------------------------------------------------------------------------------------- 
-
-  passwordInput.type = isPasswordVisible ? "password" : "text"
-
-// Si estaba visible (text) se cambia a oculto (pasword )  si estaba oculto se hace  visible-------------------------------------------------------------------------------------------------------
+  if (isPasswordVisible) {
+  passwordInput.type = "password"
+} else {
+  passwordInput.type = "text"
+}
 
   togglePassword.classList.toggle("bx-show-alt", isPasswordVisible)
   togglePassword.classList.toggle("bx-hide", !isPasswordVisible)
