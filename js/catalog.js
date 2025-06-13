@@ -22,7 +22,7 @@ function createPost() {
         card.classList.add("cards")
         card.setAttribute("data-title", game.title.toLowerCase())
 
-b // Imagen del juegoooo--------------------------------------------------------------------------------------------------------------------------------
+// Imagen del juegoooo--------------------------------------------------------------------------------------------------------------------------------
 
         const imgContainer = document.createElement("div")
         imgContainer.classList.add("img-card")
